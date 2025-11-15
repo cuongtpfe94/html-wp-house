@@ -1,0 +1,16 @@
+@use '../helpers/variables' as *;
+
+.hpd-heading {
+  height: 40px;
+  border-radius: 3px;
+  background-color: var(--breadcrumb-bg-color);
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white-color);
+    line-height: 40px;
+    text-align: left;
+    padding-left: 20px;
+  }
+}

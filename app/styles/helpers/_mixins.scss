@@ -1,0 +1,57 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin pseudo(
+  $width: 100%,
+  $height: 100%,
+  $display: inline-block,
+  $pos: absolute,
+  $content: ''
+) {
+  content: $content;
+  display: $display;
+  position: $pos;
+  @include size($width, $height);
+}
+
+@mixin circle {
+  @include border-radius(100%);
+}
+
+@mixin centerAbsolute($pos) {
+  position: absolute;
+
+  @if $pos == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if $pos == 'left' {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $pos == 'top' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin flexbox(
+  $direction: row,
+  $content: flex-start,
+  $item: flex-start,
+  $wrap: wrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+  flex-wrap: $wrap;
+}
+
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}

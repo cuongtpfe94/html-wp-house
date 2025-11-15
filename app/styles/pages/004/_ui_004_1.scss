@@ -1,0 +1,70 @@
+@use '../../helpers/variables' as *;
+
+.hpd-004-1 {
+  margin-top: 40px;
+  min-height: 100vh;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__main {
+    flex: 1;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  &__footer {
+    padding: 0 20px 20px;
+    background-color: var(--white-color);
+
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link-item {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: var(--sidebar-link-color);
+    text-decoration: none;
+    line-height: 1.6;
+    display: inline-block;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+
+    &:hover {
+      color: var(--sidebar-link-hover-color);
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #cf3c39;
+  --primary-color-400: #8e3328;
+  --primary-color-500: #b90303;
+  --secondary-color: #ff0000;
+  --orange-color: #ffa648;
+  --orange-color-100: #d26b28;
+  --green-color: #b2b268;
+  --green-color-100: #a8c448;
+  --gray-color: #666666;
+  --gray-color-50: #f7f7f7;
+  --gray-color-80: #d9d9d9;
+  --gray-color-100: #707070;
+  --gray-dark-color-700: #333;
+  --gray-dark-color-400: #7d7d8e;
+  --white-color: #fff;
+  --black-color: #000;
+  --bg-body-color: #fff;
+  --bg-color-1: #f2dfb5;
+  --bg-color-2: #f9f0da;
+  --breadcrumb-bg-color: #e99494;
+  --breadcrumb-text-color: #333;
+  --breadcrumb-separator-color: #333;
+  --sidebar-border-color: #999;
+  --sidebar-title-bg-color: #f5f5f5;
+  --sidebar-title-color: #333;
+  --sidebar-link-color: #0066cc;
+  --sidebar-link-hover-color: #004999;
+  --category-table-border-color: #999;
+  --category-table-header-bg: #f5f5f5;
+  --category-table-row-hover: #f9f9f9;
+  --category-arrow-color: #666;
+  --data-table-border-color: #999;
+  --data-table-header-bg: #dcf0ff;
+  --data-table-header-color: #333;
+  --data-table-cell-color: #333;
+}
+
+$font-family-base: 'Noto Sans JP', sans-serif;
+$header-height-pc: 100px;
+$header-height-sp: 60px;
+$font-size: 14px;
+$container-width: 1280px;

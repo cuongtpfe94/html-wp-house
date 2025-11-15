@@ -1,0 +1,75 @@
+@use '../helpers/variables' as *;
+
+/* Breadcrumb component */
+.hpd-breadcrumb {
+  background-color: var(--breadcrumb-bg-color);
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 3px;
+
+  @media (max-width: 768px) {
+    padding: 15px 0;
+  }
+
+  &__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    @media (max-width: 768px) {
+      padding: 0 12px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    &:first-child {
+      .hpd-breadcrumb__separator {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: var(--breadcrumb-text-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+  }
+
+  &__separator {
+    color: var(--breadcrumb-separator-color);
+    font-weight: 400;
+    user-select: none;
+    flex-shrink: 0;
+  }
+
+  &__current {
+    color: var(--breadcrumb-text-color);
+    font-weight: 400;
+  }
+}

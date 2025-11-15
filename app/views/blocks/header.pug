@@ -1,0 +1,133 @@
+header.hpd-header
+  .hpd-header__main
+    .hpd-header__container
+      .hpd-header__logo
+        a.hpd-header__logo-link(href="/")
+          img.hpd-header__logo-image(src="/images/logo.png" alt="ベターリビング")
+
+      nav.hpd-header__nav
+        ul.hpd-header__nav-list
+          li.hpd-header__nav-item
+            a.hpd-header__nav-link(href="#") ホーム財団のご案内
+          li.hpd-header__nav-item
+            a.hpd-header__nav-link(href="#") アクセス
+          li.hpd-header__nav-item
+            a.hpd-header__nav-link(href="#") 採用情報
+          li.hpd-header__nav-item
+            a.hpd-header__nav-link(href="#") English・中文
+
+      .hpd-header__search
+        .hpd-header__search-text BL部品でお困りの方
+        .hpd-header__search-text.hpd-header__search-text--secondary 総合お問い合わせ
+        form.hpd-header__search-form
+          input.hpd-header__search-input(type="search" placeholder="サイト内検索")
+          button.hpd-header__search-button(type="submit" aria-label="サイト内検索")
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none")
+              script(xmlns="")
+              path(d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333")
+              script(xmlns="")
+
+      button.hpd-header__menu-toggle(aria-label="メニューを開く" aria-expanded="false")
+        span.hpd-header__menu-toggle-line
+        span.hpd-header__menu-toggle-line
+        span.hpd-header__menu-toggle-line
+
+  .hpd-header__search-mobile
+    input.hpd-header__search-input-mobile(type="search")
+
+  .hpd-header__drawer
+    .hpd-header__drawer-overlay
+    nav.hpd-header__drawer-nav
+      .hpd-header__drawer-header
+        .hpd-header__drawer-logo
+          a(href="/")
+            img.hpd-header__drawer-image(src="/images/logo.png" alt="ベターリビング")
+        div
+          button.hpd-header__drawer-search(type="submit" aria-label="検索")
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none")
+              script(xmlns="")
+              path(d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333")
+              script(xmlns="")
+          button.hpd-header__drawer-close(aria-label="メニューを閉じる")
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 39 40" fill="none")
+              script(xmlns="")
+              path(d="M36.6397 0.348385L0.294434 36.6936L2.15412 38.5533L38.4993 2.20807L36.6397 0.348385Z" fill="#333333")
+              path(d="M38.501 37.2001L2.15576 0.854858L0.296067 2.71455L36.6413 39.0598L38.501 37.2001Z" fill="#333333")
+              script(xmlns="")
+
+      ul.hpd-header__drawer-list
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") TOP
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") 優良住宅部品（BL部品）等
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") 試験・評定・証明・評価等
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") 建築確認検査・性能評価等
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") システム審査登録
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item
+          a.hpd-header__drawer-link(href="#") 調査・研究・技術普及等
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+
+      ul.hpd-header__drawer-list-secondary
+        li.hpd-header__drawer-item-secondary
+          a.hpd-header__drawer-link-secondary(href="#") 財団のご案内
+          button.hpd-header__drawer-arrow
+            svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+              script(xmlns="")
+              path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+              script(xmlns="")
+        li.hpd-header__drawer-item-secondary
+          .hpd-header__drawer-item-secondary-link
+            a.hpd-header__drawer-link-secondary(href="#") アクセス
+            button.hpd-header__drawer-arrow
+              svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+                script(xmlns="")
+                path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+                script(xmlns="")
+          .hpd-header__drawer-item-secondary-link
+            a.hpd-header__drawer-link-secondary(href="#") 採用情報
+            button.hpd-header__drawer-arrow
+              svg.mdl-js(xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none")
+                script(xmlns="")
+                path(d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10")
+                script(xmlns="")
+
+      .hpd-header__drawer-buttons
+        button.hpd-header__drawer-button.hpd-header__drawer-button--primary 総合お問い合わせ
+        button.hpd-header__drawer-button.hpd-header__drawer-button--secondary BL部品でお困りの方
+
+      .hpd-header__drawer-footer
+        .hpd-header__drawer-sites
+          a.hpd-header__drawer-site(href="#") BLマガジン ＞
+          a.hpd-header__drawer-site(href="#") English・中文 ＞
