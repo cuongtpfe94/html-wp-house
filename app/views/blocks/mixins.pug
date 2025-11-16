@@ -1,0 +1,10 @@
+mixin checklist(title, items = [])
+  .hpd-checklist(class=items.length > 0 ? 'is-active' : '')
+    .hpd-checklist__header
+      h3.hpd-checklist__title= title
+
+    if items.length > 0
+      .hpd-checklist__body
+          .hpd-checklist__buttons
+            each item in items
+              a.hpd-checklist__button.is-auto(href="#")= item

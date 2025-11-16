@@ -1,0 +1,23 @@
+- var heading = '性能表示書'
+
+.hpd-005-1
+  .hpd-005-1__container
+    include ../../blocks/breadcrum
+    include ../../blocks/banner
+    .hpd-005-1__content
+      include ../../blocks/sidebar
+      .hpd-005-1__main
+        include ../../blocks/heading
+
+        .hpd-005-1__checklists
+          h4.hpd-005-1__checklists-title 新規・更新・変更における性能表示書
+          .hpd-005-1__checklists-item
+            +checklist('品目一覧')
+          .hpd-005-1__checklists-item
+            +checklist('玄関周り', ['玄関ドア', '改修用玄関ドア', 'ドア・クローザ', '玄関ドア用錠前', '宅配ボックス', '郵便受箱', 'プレスドア専用改修用扉'])
+          .hpd-005-1__checklists-item
+            +checklist('窓・手すり', ['サッシ', '改修用サッシ', '内窓', 'サッシ（天窓)', '面格子', '墜落防止手すり', '歩行・動作補助手すり', '安全合わせガラス'])
+        .hpd-005-1__pagination
+          .hpd-005-1__pagination-dot
+          .hpd-005-1__pagination-dot
+          .hpd-005-1__pagination-dot

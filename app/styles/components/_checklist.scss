@@ -8,10 +8,15 @@
   overflow: hidden;
   margin: 0 20px;
 
+  &.is-active {
+    .hpd-checklist__header {
+      border-bottom: 1px solid var(--category-table-border-color);
+    }
+  }
+
   &__header {
     background-color: var(--category-table-header-bg);
     padding: 14px 16px;
-    border-bottom: 1px solid var(--category-table-border-color);
   }
 
   &__title {
@@ -28,12 +33,8 @@
 
   &__buttons {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
-
-    @media (max-width: 768px) {
-      gap: 12px;
-    }
 
     @media (max-width: 480px) {
       flex-direction: column;
@@ -56,5 +57,9 @@
     cursor: pointer;
     white-space: nowrap;
     min-width: 140px;
+
+    &.is-auto {
+      min-width: auto;
+    }
   }
 }

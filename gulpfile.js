@@ -13,6 +13,7 @@ const options = {
       'app/views/!blocks/**',
       'app/views/!layout/**',
       'app/views/004/**',
+      'app/views/005/**',
     ],
     dest: 'public',
     all: 'app/views/**/*.pug',
