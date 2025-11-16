@@ -18,6 +18,8 @@
 @use 'components/data-table';
 @use 'components/jis-table';
 @use 'components/download-table';
+@use 'components/notice-box';
+@use 'components/info-box';
 
 // Pages
 @use 'pages/004/ui_004_1';
@@ -26,3 +28,4 @@
 @use 'pages/005/ui_005_2';
 @use 'pages/006/ui_006';
 @use 'pages/007/ui_007';
+@use 'pages/008/ui_008';

@@ -1,0 +1,32 @@
+@use '../helpers/variables' as *;
+
+/* Info Box component */
+.hpd-info-box {
+  margin: 30px 0;
+  border: 1px solid var(--download-table-border-color);
+  background-color: var(--white-color);
+  border-radius: 5px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-dark-color-700);
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--download-table-border-color);
+    background-color: var(--gray-color-50);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  &__content {
+    padding: 10px 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: var(--gray-dark-color-700);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
