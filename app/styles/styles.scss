@@ -21,6 +21,7 @@
 @use 'components/notice-box';
 @use 'components/info-box';
 @use 'components/recruitment';
+@use 'components/job-list';
 
 // Pages
 @use 'pages/004/ui_004_1';
@@ -31,3 +32,4 @@
 @use 'pages/007/ui_007';
 @use 'pages/008/ui_008';
 @use 'pages/009/ui_009';
+@use 'pages/010/ui_010';

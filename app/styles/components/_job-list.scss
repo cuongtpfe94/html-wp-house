@@ -1,0 +1,137 @@
+@use '../helpers/variables' as *;
+
+/* Job List component */
+.hpd-job-list {
+  margin: 30px 0;
+
+  &__menu {
+    margin-bottom: 40px;
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+    line-height: 1.8;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bullet {
+    background-color: var(--sidebar-link-color);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    display: inline-block;
+  }
+
+  &__bullet-black {
+    color: var(--gray-dark-color-700);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  &__menu-link {
+    font-size: 14px;
+    color: var(--gray-dark-color-700);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+    color: var(--sidebar-link-hover-color);
+  }
+
+  &__new-label {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  &__detail {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__detail-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    border-bottom: 1px solid var(--download-table-border-color);
+    padding: 12px;
+    background-color: var(--category-table-header-bg);
+  }
+
+  &__detail-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-dark-color-700);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  &__table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--download-table-border-color);
+    background-color: var(--white-color);
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+  }
+
+  &__row {
+    border-bottom: 1px solid var(--download-table-border-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__header {
+    width: 200px;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-dark-color-700);
+    background-color: var(--data-table-header-bg);
+    vertical-align: top;
+    line-height: 1.6;
+
+    @media (max-width: 768px) {
+      width: 150px;
+      padding: 12px 16px;
+      font-size: 13px;
+    }
+  }
+
+  &__cell {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: var(--gray-dark-color-700);
+    line-height: 1.8;
+    vertical-align: top;
+
+    @media (max-width: 768px) {
+      padding: 12px 16px;
+      font-size: 13px;
+    }
+  }
+
+  &__link {
+    color: var(--sidebar-link-color);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--sidebar-link-hover-color);
+    }
+  }
+}
