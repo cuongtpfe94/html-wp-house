@@ -17,6 +17,7 @@
 @use 'components/category-title';
 @use 'components/data-table';
 @use 'components/jis-table';
+@use 'components/download-table';
 
 // Pages
 @use 'pages/004/ui_004_1';
@@ -24,3 +25,4 @@
 @use 'pages/005/ui_005_1';
 @use 'pages/005/ui_005_2';
 @use 'pages/006/ui_006';
+@use 'pages/007/ui_007';
