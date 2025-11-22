@@ -1,0 +1,41 @@
+@use '../helpers/variables' as *;
+
+.hpd-section-header {
+  $root: &;
+
+  &.is-red {
+    #{$root}__title {
+      background-color: #f9e5e6;
+      border: 3px solid var(--accordion-red);
+    }
+  }
+
+  &.is-blue {
+    #{$root}__title {
+      background-color: #e4f0fa;
+      border: 3px solid var(--accordion-blue);
+    }
+  }
+
+  &.is-orange {
+    #{$root}__title {
+      background-color: #fef0e4;
+      border: 3px solid var(--accordion-orange);
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: var(--gray-dark-color-700);
+    margin: 0;
+    line-height: 1.4;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+  }
+}

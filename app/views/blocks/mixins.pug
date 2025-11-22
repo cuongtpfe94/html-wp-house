@@ -8,3 +8,59 @@ mixin checklist(title, items = [])
           .hpd-checklist__buttons
             each item in items
               a.hpd-checklist__button.is-auto(href="#")= item
+
+mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange', items = [])
+  .hpd-main-banner(class=color)
+    .hpd-main-banner__content
+      .hpd-main-banner__header
+        h3.hpd-main-banner__title= title
+        h4.hpd-main-banner__subtitle= subtitle
+
+      if items && items.length > 0
+        .hpd-main-banner__notices
+          span.hpd-main-banner__badge お知らせ
+          .hpd-main-banner__notices-list
+            each item in items
+              a.hpd-main-banner__notice(href=item.link || '#')
+                .hpd-main-banner__notice-meta
+                  span.hpd-main-banner__date= item.date
+                .hpd-main-banner__notice-title= item.title
+                span.hpd-main-banner__arrow >
+
+    .hpd-main-banner__image
+      img(src=image alt=title)
+
+mixin sectionHeader(title, color = 'is-red')
+  .hpd-section-header(class=color)
+    h2.hpd-section-header__title= title
+
+mixin slider(slides = [])
+  .hpd-slider
+    button.hpd-slider__arrow.hpd-slider__arrow--prev(type='button' aria-label='Previous')
+      span &lt;
+
+    .hpd-slider__container
+      .hpd-slider__track
+        each slide in slides
+          .hpd-slider__slide
+            .hpd-slider__image
+              img(src='images/slide.png' alt=slide.title)
+            .hpd-slider__content
+              h3.hpd-slider__title= slide.title
+              if slide.description
+                p.hpd-slider__description= slide.description
+              if slide.link
+                a.hpd-slider__link(href=slide.link)
+                  span= slide.linkText || '詳しくはこちら'
+
+    button.hpd-slider__arrow.hpd-slider__arrow--next(type='button' aria-label='Next')
+      span &gt;
+
+    .hpd-slider__dots
+      each slide, index in slides
+        button.hpd-slider__dot(type='button' aria-label=`Slide ${index + 1}` data-slide=index)
+
+mixin contactBox(title, link = '#', color = 'is-red')
+  .hpd-contact-box(class=color)
+    a.hpd-contact-box__link(href=link)
+      span.hpd-contact-box__text= title

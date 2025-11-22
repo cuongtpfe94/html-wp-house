@@ -24,6 +24,10 @@
 @use 'components/info-box';
 @use 'components/recruitment';
 @use 'components/job-list';
+@use 'components/main-banner';
+@use 'components/section-title';
+@use 'components/slider';
+@use 'components/contact-box';
 
 // Pages
 @use 'pages/004/ui_004_1';
@@ -37,3 +41,4 @@
 @use 'pages/010/ui_010';
 @use 'pages/について/ui_1';
 @use 'pages/について/ui_2';
+@use 'pages/メイン/main_1';

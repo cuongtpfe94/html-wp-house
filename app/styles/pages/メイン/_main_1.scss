@@ -1,0 +1,171 @@
+@use '../../helpers/variables' as *;
+
+.hpd-main-1 {
+  min-height: 100vh;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__content {
+    padding: 60px 0 0;
+
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__slider-section {
+    margin-top: 60px;
+
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+
+  &__contact-section {
+    margin-top: 50px;
+
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__section-body {
+    padding: 40px 20px;
+
+    @media (min-width: 768px) {
+      padding: 50px 40px;
+    }
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: 767px) {
+      gap: 25px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__heading {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--accordion-red);
+    margin: 0;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--gray-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accordion-red);
+    }
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+      padding-left: 18px;
+
+      &::before {
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: var(--gray-dark-color-700);
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s ease;
+    padding: 2px 0;
+
+    &:hover {
+      color: var(--accordion-red);
+      text-decoration: underline;
+    }
+
+    &.has-pdf {
+      .hpd-main-1__text {
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    display: inline;
+  }
+}

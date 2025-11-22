@@ -1,0 +1,272 @@
+@use '../helpers/variables' as *;
+
+.hpd-main-banner {
+  $root: &;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  min-height: 500px;
+
+  &.is-red {
+    background-color: rgb(173 155 156 / 90%);
+
+    #{$root}__header {
+      border-left: 10px solid var(--accordion-red);
+    }
+
+    #{$root}__badge {
+      background-color: #f9dfe0;
+      color: var(--accordion-red);
+    }
+  }
+
+  &.is-blue {
+    #{$root}__header {
+      border-left: 10px solid var(--accordion-blue);
+    }
+
+    #{$root}__badge {
+      background-color: #e4f0fa;
+      color: var(--accordion-blue);
+    }
+  }
+
+  &.is-orange {
+    #{$root}__header {
+      border-left: 10px solid var(--accordion-orange);
+    }
+
+    #{$root}__badge {
+      background-color: #f9dfe0;
+      color: var(--accordion-orange);
+    }
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  &__header {
+    position: relative;
+    margin: 0 auto 30px;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 12px;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--gray-dark-color-700);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray-color);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  &__notices {
+    background-color: #f5f5f5;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 980px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__notice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+  }
+
+  &__notices-list {
+    overflow: hidden;
+  }
+
+  &__notice-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+  }
+
+  &__badge {
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    min-width: 80px;
+  }
+
+  &__notice-title {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  &__arrow {
+    font-size: 18px;
+    color: #999;
+    flex-shrink: 0;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__content {
+      padding: 40px 50px 30px 70px;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__image {
+      width: 400px;
+      padding: 30px;
+    }
+
+    &__notices {
+      padding: 30px 35px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      padding: 35px 40px 25px 60px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__image {
+      width: 350px;
+      padding: 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-height: auto;
+
+    &__content {
+      padding: 40px 30px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__notices {
+      max-width: 100%;
+      padding: 25px 20px;
+    }
+
+    &__notice {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__notice-meta {
+      width: 100%;
+    }
+
+    &__notice-title {
+      white-space: normal;
+      width: 100%;
+    }
+
+    &__image {
+      width: 100%;
+      padding: 30px;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: 30px 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__notices {
+      padding: 20px 15px;
+      gap: 15px;
+    }
+
+    &__badge {
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+
+    &__date {
+      font-size: 13px;
+      min-width: 70px;
+    }
+
+    &__notice-title {
+      font-size: 13px;
+    }
+  }
+}
