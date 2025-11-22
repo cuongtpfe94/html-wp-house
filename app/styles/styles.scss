@@ -9,7 +9,9 @@
 
 // Components
 @use 'components/breadcrumb';
+@use 'components/breadcrumb2';
 @use 'components/banner';
+@use 'components/banner2';
 @use 'components/sidebar';
 @use 'components/heading';
 @use 'components/category-table';
@@ -33,3 +35,5 @@
 @use 'pages/008/ui_008';
 @use 'pages/009/ui_009';
 @use 'pages/010/ui_010';
+@use 'pages/について/ui_1';
+@use 'pages/について/ui_2';

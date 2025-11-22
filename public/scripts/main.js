@@ -167,11 +167,59 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   new SidebarAccordion();
 
+  // ABOUT ACCORDION
+  class AboutAccordion {
+    constructor() {
+      this.accordion = document.querySelector('.hpd-about__accordion');
+      this.items = document.querySelectorAll('.hpd-about__accordion-item');
+      this.init();
+    }
+    init() {
+      if (!this.accordion || this.items.length === 0) return;
+      this.bindEvents();
+    }
+    bindEvents() {
+      this.items.forEach(item => {
+        const header = item.querySelector('.hpd-about__accordion-header');
+        if (!header) return;
+        header.addEventListener('click', () => {
+          this.toggleItem(item, header);
+        });
+      });
+    }
+    toggleItem(item, header) {
+      const isActive = item.classList.contains('is-active');
+      if (isActive) {
+        // Close this item
+        item.classList.remove('is-active');
+        header.setAttribute('aria-expanded', 'false');
+      } else {
+        // Close all other items first (optional - remove if you want multiple items open)
+        this.closeAllItems();
+
+        // Open this item
+        item.classList.add('is-active');
+        header.setAttribute('aria-expanded', 'true');
+      }
+    }
+    closeAllItems() {
+      this.items.forEach(item => {
+        const header = item.querySelector('.hpd-about__accordion-header');
+        item.classList.remove('is-active');
+        if (header) {
+          header.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  }
+  new AboutAccordion();
+
   // Export for potential module usage
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
       HeaderComponent,
-      SidebarAccordion
+      SidebarAccordion,
+      AboutAccordion
     };
   }
 });

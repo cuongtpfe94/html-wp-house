@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>について - 1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="hpd-wrapper">
+      <header class="hpd-header">
+        <div class="hpd-header__main">
+          <div class="hpd-header__container">
+            <div class="hpd-header__logo"><a class="hpd-header__logo-link" href="/"><img class="hpd-header__logo-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+            <nav class="hpd-header__nav">
+              <ul class="hpd-header__nav-list">
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">ホーム財団のご案内</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">アクセス</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">採用情報</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">English・中文</a></li>
+              </ul>
+            </nav>
+            <div class="hpd-header__search">
+              <div class="hpd-header__search-text">BL部品でお困りの方</div>
+              <div class="hpd-header__search-text hpd-header__search-text--secondary">総合お問い合わせ</div>
+              <form class="hpd-header__search-form">
+                <input class="hpd-header__search-input" type="search" placeholder="サイト内検索">
+                <button class="hpd-header__search-button" type="submit" aria-label="サイト内検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <button class="hpd-header__menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span></button>
+          </div>
+        </div>
+        <div class="hpd-header__search-mobile">
+          <input class="hpd-header__search-input-mobile" type="search">
+        </div>
+        <div class="hpd-header__drawer">
+          <div class="hpd-header__drawer-overlay"></div>
+          <nav class="hpd-header__drawer-nav">
+            <div class="hpd-header__drawer-header">
+              <div class="hpd-header__drawer-logo"><a href="/"><img class="hpd-header__drawer-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+              <div>
+                <button class="hpd-header__drawer-search" type="submit" aria-label="検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+                <button class="hpd-header__drawer-close" aria-label="メニューを閉じる">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 39 40" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M36.6397 0.348385L0.294434 36.6936L2.15412 38.5533L38.4993 2.20807L36.6397 0.348385Z" fill="#333333"></path>
+                    <path d="M38.501 37.2001L2.15576 0.854858L0.296067 2.71455L36.6413 39.0598L38.501 37.2001Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="hpd-header__drawer-list">
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">TOP</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">優良住宅部品（BL部品）等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">試験・評定・証明・評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">建築確認検査・性能評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">システム審査登録</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">調査・研究・技術普及等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="hpd-header__drawer-list-secondary">
+              <li class="hpd-header__drawer-item-secondary"><a class="hpd-header__drawer-link-secondary" href="#">財団のご案内</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item-secondary">
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">アクセス</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">採用情報</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <div class="hpd-header__drawer-buttons">
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--primary">総合お問い合わせ</button>
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--secondary">BL部品でお困りの方</button>
+            </div>
+            <div class="hpd-header__drawer-footer">
+              <div class="hpd-header__drawer-sites"><a class="hpd-header__drawer-site" href="#">BLマガジン ＞</a><a class="hpd-header__drawer-site" href="#">English・中文 ＞</a></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="hpd-about">
+        <div class="hpd-about__container">
+          <nav class="hpd-breadcrumb2" aria-label="Breadcrumb">
+            <div class="hpd-breadcrumb2__container">
+              <ol class="hpd-breadcrumb2__list">
+                <li class="hpd-breadcrumb2__item"><a class="hpd-breadcrumb2__link" href="/">ホーム</a></li>
+                <li class="hpd-breadcrumb2__item"><span class="hpd-breadcrumb__separator">></span><span class="hpd-breadcrumb__current">ホーム</span></li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+        <div class="hpd-banner2">
+          <div class="hpd-banner2__container">
+            <div class="hpd-banner2__inner">
+              <div class="hpd-banner2__content">
+                <h2 class="hpd-banner2__content-title">財団のご案内</h2>
+              </div>
+              <div class="hpd-banner2__image"><img class="hpd-banner2__image-src" src="/images/flower.svg" alt="flower"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hpd-about__content">
+          <div class="hpd-about__main">
+            <div class="hpd-about__intro">
+              <h1 class="hpd-about__title">財団業務のご紹介</h1>
+              <div class="hpd-about__body">
+                <div class="hpd-about__text-content">
+                  <p class="hpd-about__paragraph">一般財団法人ベターリビングは、国民の住生活の向上に寄与することを目的として、1973年に当時の建設省（現国土交通省）より認可を受け財団法人住宅部品開発センターとして設立されました。翌1974年に優良住宅部品（BL部品）の評定機関として指定を受けており来BL部品の認定・普及に関する業務を行ってまいりました。</p>
+                  <p class="hpd-about__paragraph">1981年にはつくばに住宅部品開発を中心とした性能試験棟を開設し、その後各種試験機能・研究機能の整備・充実を図ってまいりました。また、ISO規格の普及、建築基準法の改正、住宅品質確保法、建築物省エネ法の制定等に対応し、業務を拡充する種管審査務を実施してまいりました。</p>
+                  <p class="hpd-about__paragraph">この間1988年には財団法人ベターリビングに名称を変え、2011年には公益法人制度改革に伴い一般財団法人に移行しております。</p>
+                  <p class="hpd-about__paragraph">現在では公正・中立な第三者機関として、住宅をはじめとする建築物の設計、施工、部品、材料に関する評価、試験、登録等の事業及び調査研究事業を継続に実行しております。我が国は人口減少社会・成熟社会を迎え、少子高齢化、地球環境や安全・安心の確保等に関しており一層の取り組みを求められていますし、これらの課題は住宅・建築のあり方にもかかわる課題でもあります。</p>
+                  <p class="hpd-about__paragraph">新しい令和の時代を迎え、ベターリビングでは住宅・建築に関する基準認証・試験研究機関としての立場から、これまで以上に</p>
+                </div>
+                <div class="hpd-about__image-box"><img class="hpd-about__pamphlet" src="/images/logo-2.svg" alt="パンフレット（日本語版）">
+                  <p class="hpd-about__image-caption">パンフレット（日本語版）</p>
+                </div>
+              </div>
+              <div class="hpd-about__buttons"><a class="hpd-about__button" href="#"><span>財団情報</span>
+                  <svg class="hpd-about__button-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 3l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"></path>
+                  </svg></a><a class="hpd-about__button" href="#"><span>財団運営の中期計画</span>
+                  <svg class="hpd-about__button-icon" width="20" height="20" viewBox="0 0 20 20">
+                    <path d="M7 3l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"></path>
+                  </svg></a></div>
+            </div>
+            <div class="hpd-about__mission">
+              <div class="hpd-about__mission-container">
+                <div class="hpd-about__mission-content">
+                  <div class="hpd-about__mission-section">
+                    <h2 class="hpd-about__mission-title">ミッション及びスピリット</h2>
+                    <h3 class="hpd-about__mission-heading">● ベターリビング ミッション</h3>
+                    <p class="hpd-about__mission-text">ベターリビングは、住宅をはじめとする建築物の設計、施工、部品、材料に関する的確な評価、試験、登録等の業務や住生活に関する創造的な調査・研究事業を通じて、より安心安全で、より快適に優しく、よりサスティナブルな（持続可能な）住まいづくり暮らしの実現に貢献します。</p>
+                    <h3 class="hpd-about__mission-heading">● ベターリビング スピリット</h3>
+                    <ul class="hpd-about__mission-list">
+                      <li class="hpd-about__mission-item">私たちは常、常に、お客様の立場に立って、よく聞き、よく考え、チームワークを大切にしながらスピーディに業務を実行します。</li>
+                      <li class="hpd-about__mission-item">私たちは常、常に、社会的責任を自覚し、法令や社会規範を遵守し、適正かつ誠実に業務を実行します。</li>
+                      <li class="hpd-about__mission-item">私たちは常、常に、向上心とチャレンジ精神を持ち、先進の知識、技術、スキルの習得に努め、意欲的に業務を</li>
+                    </ul>
+                    <h3 class="hpd-about__mission-heading">● コーポレートメッセージ</h3>
+                    <p class="hpd-about__mission-message">より良き住まい　より良き住環境　より良き建築の実現</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hpd-about__services">
+              <div class="hpd-about__container">
+                <h2 class="hpd-about__services-title">財団事業のご紹介</h2>
+                <div class="hpd-about__accordion">
+                  <div class="hpd-about__accordion-item" data-color="red">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">優良住宅部品（BL部品）の認定</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-content-inner">
+                        <div class="hpd-about__accordion-image-left"><img src="/images/about-1.png" alt="BL部品認定制度"></div>
+                        <div class="hpd-about__accordion-text-content">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title">ＢＬ部品認定制度</h3>
+                            <div class="hpd-about__accordion-section-body">
+                              <div class="hpd-about__accordion-section-content">
+                                <div class="hpd-about__accordion-text">
+                                  <p>性能(安全性、機能性、耐久性）、生産品質、アフターサービス体制などについて基準を定め、適合する住宅部品を「優良住宅部品（ＢＬ部品）」として認定する制度です（2024年7月現在 キッチン、給湯機、サッシ、ガレージなど66品目が認定の対象となっています）。特に、省エネ、高齢者対応、住宅ストック活用、防犯性の向上など社会的要請にも応える住宅部品は「ＢＬ-bs部品」として認定しています。</p>
+                                </div>
+                                <div class="hpd-about__accordion-image-right">
+                                  <div class="hpd-about__accordion-products"><img src="/images/about-2.png" alt="エネファーム">
+                                    <div class="hpd-about__accordion-product-caption">
+                                      <p>エネファーム</p>
+                                      <p class="hpd-about__accordion-product-note">（家庭用燃料電池コージェネレーションシステム）</p>
+                                    </div>
+                                  </div>
+                                  <div class="hpd-about__accordion-mark"><img src="/images/about-3.png" alt="BLマーク証紙">
+                                    <p class="hpd-about__accordion-mark-caption">ＢＬマーク証紙</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title">ＢＬ部品の普及推進</h3>
+                            <p class="hpd-about__accordion-section-text">ＢＬ部品には、安心の目印として「ＢＬマーク」を製品本体やカタログなどで表示するとともに、認定企業、関係業界と連携した活動を通じてその普及を推進しています。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title">ＢＬ保険による品質保証のバックアップ</h3>
+                            <p class="hpd-about__accordion-section-text">ＢＬ保険は「保証責任」と「賠償責任」の２種類で構成され、ＢＬ部品の設計・製造や当該部品の据替工事の施工にかかる瑕疵保証責任や瑕疵に起因する損害賠償責任の履行を支援します。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title">お客様相談等に関する業務</h3>
+                            <p class="hpd-about__accordion-section-text">ユーザーからのＢＬ部品等に係る不具合、アフターサービス等に関する相談を受け付けています。また、必要に応じて適切な相談窓口や修理窓口等の紹介をするなど関係企業と連携し対応しています。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title">JIS認証</h3>
+                            <p class="hpd-about__accordion-section-text">産業標準化法に基づき、登録認証機関としてJISマーク表示制度に係る「製品認証」を行います。サッシ、ドアセット、複層ガラス、プレキャストプレストレストコンクリート製品等の7種のJIS規格が対象です。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hpd-about__accordion-item" data-color="blue">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">試験・評定　型式部材等の認定・認証</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-content-inner">
+                        <div class="hpd-about__accordion-image-left"><img src="/images/about-4.png" alt="試験・評定"></div>
+                        <div class="hpd-about__accordion-text-content">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title blue">性能試験</h3>
+                            <div class="hpd-about__accordion-section-body">
+                              <div class="hpd-about__accordion-section-content">
+                                <div class="hpd-about__accordion-text">
+                                  <p>つくば建築試験研究センターは、JNLA登録試験事業者として、公正かつ中立な立場で、BL部品や建築材料・構造・環境設備・防耐火・工事用材料など建築全般にわたる様々な性能試験及び研究を実施しています。</p>
+                                </div>
+                                <div class="hpd-about__accordion-images-grid">
+                                  <div class="hpd-about__accordion-grid-item"><img src="/images/about-5.png" alt="試験研究本館">
+                                    <p class="hpd-about__accordion-grid-caption">試験研究本館</p>
+                                  </div>
+                                  <div class="hpd-about__accordion-grid-item"><img src="/images/about-6.png" alt="抗曲げ試験装置">
+                                    <p class="hpd-about__accordion-grid-caption">抗曲げ試験装置</p>
+                                  </div>
+                                  <div class="hpd-about__accordion-grid-item"><img src="/images/about-7.png" alt="水平加熱炉">
+                                    <p class="hpd-about__accordion-grid-caption">水平加熱炉</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title blue">評定（技術基準への適合性証明）</h3>
+                            <p class="hpd-about__accordion-section-text">建築材料・部材・構工法及び施工品質について、公正中立な立場から法令やその他の技術基準への適合性を評定します。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title blue">建築基準法関係</h3>
+                            <div class="hpd-about__accordion-subsection">
+                              <h4 class="hpd-about__accordion-subsection-title">【構造方法等の認定に係る性能評価】</h4>
+                              <p class="hpd-about__accordion-section-text">指定性能評価機関として、防耐火、枠組壁工法及び軸組工法の壁倍率、建築材料の品質（ホルムアルデヒド発散建築材料含む）、昇降機、柱の図書省略などの24区分についての性能評価を行います。</p>
+                            </div>
+                            <div class="hpd-about__accordion-subsection">
+                              <h4 class="hpd-about__accordion-subsection-title">【型式適合認定・型式部材等製造者認証】</h4>
+                              <p class="hpd-about__accordion-section-text">建築物の部分、防火設備、換気設備、給水設備、昇降機の分野について法令で定める一連の規定に適合するものであることの認定及びその製造者の認証を行います。</p>
+                            </div>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title blue">住宅品質確保法関係</h3>
+                            <div class="hpd-about__accordion-subsection">
+                              <h4 class="hpd-about__accordion-subsection-title">【特別評価方法認定に係る試験】</h4>
+                              <p class="hpd-about__accordion-section-text">住宅性能表示制度における評価方法基準を補完するものとして特殊な工法等の試験を行います。</p>
+                            </div>
+                            <div class="hpd-about__accordion-subsection">
+                              <h4 class="hpd-about__accordion-subsection-title">【住宅型式性能認定・型式住宅部分等製造者認証】</h4>
+                              <p class="hpd-about__accordion-section-text">標準的な設計（型式）による住宅またはその部分の性能について、基準への適合に係る認定を行います。またその製造者の認証も行います。</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hpd-about__accordion-item" data-color="orange">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">建築確認検査・住宅性能評価等</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-content-inner">
+                        <div class="hpd-about__accordion-image-left"><img src="/images/about-8.png" alt="建築確認検査"></div>
+                        <div class="hpd-about__accordion-text-content">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title orange">建築確認検査</h3>
+                            <p class="hpd-about__accordion-section-text">指定確認検査機関として建築物等について、建築基準法に基づく確認検査及び中間・完了検査、並びに仮使用認定の業務を行います。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title orange">構造計算適合性判定</h3>
+                            <p class="hpd-about__accordion-section-text">指定構造計算適合性判定機関として、確認審査に係る一部の建築物について、特にその構造設計内容が特定構造計算基準等へ適合しているかどうかを判断します。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title orange">住宅性能評価・長期優良住宅認定審査</h3>
+                            <div class="hpd-about__accordion-section-body">
+                              <div class="hpd-about__accordion-section-content">
+                                <div class="hpd-about__accordion-text">
+                                  <p>登録住宅性能評価機関として、住宅性能表示制度で定める評価方法基準に従って新築住宅又は既存住宅の住宅性能評価を行います。また、長期優良住宅認定のための長期使用構造等の確認審査を行います。</p>
+                                </div>
+                                <div class="hpd-about__accordion-image-single"><img src="/images/about-9.png" alt="住宅性能評価（配筋検査）">
+                                  <p class="hpd-about__accordion-image-caption">住宅性能評価（配筋検査）</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title orange">建築物エネルギー消費性能適合性判定、建築環境関連評価</h3>
+                            <p class="hpd-about__accordion-section-text">登録住宅性能評価機関として、住宅性能表示制度で定める評価方法基準に従って新築住宅又は既存住宅の住宅性能評価を行います。また、長期優良住宅認定のための長期使用構造等の確認審査を行います。</p>
+                          </div>
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title orange">その他</h3>
+                            <div class="hpd-about__accordion-two-columns">
+                              <div class="hpd-about__accordion-column">
+                                <ul class="hpd-about__accordion-list">
+                                  <li>・住宅金融支援機構適合証明</li>
+                                  <li>・住宅瑕疵担保責任保険現場検査</li>
+                                  <li>・東京ゼロエミ住宅の認証審査</li>
+                                </ul>
+                              </div>
+                              <div class="hpd-about__accordion-column">
+                                <ul class="hpd-about__accordion-list">
+                                  <li>・低炭素建築物新築等計画の技術的審査</li>
+                                  <li>・その他任意の審査、評価、検査業務</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="hpd-about__accordion-bels-image"><img src="/images/about-10.png" alt="BELSラベル">
+                              <p class="hpd-about__accordion-image-caption">BELSラベル</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hpd-about__accordion-item" data-color="green">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">マネジメントシステム審査登録</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-content-inner">
+                        <div class="hpd-about__accordion-image-left"><img src="/images/about-11.png" alt="マネジメントシステム審査登録"></div>
+                        <div class="hpd-about__accordion-text-content">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title green">ISO マネジメントシステム審査登録</h3>
+                            <div class="hpd-about__accordion-section-body">
+                              <div class="hpd-about__accordion-section-content">
+                                <div class="hpd-about__accordion-text">
+                                  <p>組織（企業等）の経営体質やマネジメントのレベルを高めるための国際規格ISOマネジメントシステムに基づき、システムを構築・運用する組織（企業等）を審査し、登録を行う業務を実施しています。</p>
+                                </div>
+                              </div>
+                              <div class="hpd-about__accordion-section-main">
+                                <div class="hpd-about__accordion-section-main-item">
+                                  <div class="hpd-about__accordion-text">
+                                    <p>【ISO9001（品質マネジメントシステム規格）】</p>
+                                    <p>顧客や社会が求めている品質を備えた製品やサービスを常に提供するための仕組み（マネジメントシステム）について定めたものです。</p>
+                                  </div>
+                                  <div class="hpd-about__accordion-text">
+                                    <p>【ISO14001（環境マネジメントシステム規格）】</p>
+                                    <p>環境負荷を与えている原因を特定し、これを適切に管理する仕組み（マネジメントシステム）について定めたものです。</p>
+                                  </div>
+                                  <div class="hpd-about__accordion-text">
+                                    <p>【ISO/IEC27001（情報セキュリティマネジメントシステム規格）】</p>
+                                    <p>個人情報等の情報資源を明確にし、機密性等について適切に管理する仕組み（マネジメントシステム）について定めたものです。また、拡張規格として、プライバシー情報マネジメントシステム（PIMS）・ISMSクラウドセキュリティ認証にも対応し、情報セキュリティ分野に関する認証業務を幅広く提供する体制を整備しています。</p>
+                                  </div>
+                                  <div class="hpd-about__accordion-text">
+                                    <p>【ISO45001（労働安全衛生マネジメントシステム規格）】</p>
+                                    <p>労働災害の防止等を図るために事業における労働安全衛生に係る危険性を評価し管理する仕組み（マネジメントシステム）について定めたものです。</p>
+                                  </div>
+                                </div>
+                                <div class="hpd-about__accordion-image-single"><img src="/images/about-12.png" alt="審査登録証">
+                                  <p class="hpd-about__accordion-image-caption">審査登録証</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hpd-about__accordion-item" data-color="teal">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">調査・研究　技術普及等</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-two-sections">
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title teal">調査・研究</h3>
+                            <div class="hpd-about__accordion-section-body teal">
+                              <p class="hpd-about__accordion-section-text">サステナブルな住まいと暮らしの実現に貢献するための調査・研究や、新工法開発や省エネルギー・防災等の視点に立った技術的な調査・研究を、公的機関・企業等からのご依頼により、あるいは財団として独自に実施し、情報発信します。</p>
+                              <div class="hpd-about__accordion-image-single"><img src="/images/about-13.png" alt="調査研究リーフレット">
+                                <p class="hpd-about__accordion-image-caption">調査研究リーフレット</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title teal">住宅・建築関連の情報交流・技術交流・研修会の実施</h3>
+                            <div class="hpd-about__accordion-section-body teal">
+                              <div class="hpd-about__accordion-section-content">
+                                <p class="hpd-about__accordion-section-text">住宅部品及び住宅に関する調査・研究成果を活用し、消費者の住生活に役立つ情報を発信しています。</p>
+                                <p class="hpd-about__accordion-section-text">また、この成果をもとに関連団体企業との情報交流等を行い、住宅産業の発展に寄与します。</p>
+                                <p class="hpd-about__accordion-section-text">住宅・建築関連業界の方々への情報発信等の場としての講演会・技術発表会等を実施しています。</p>
+                              </div>
+                              <div class="hpd-about__accordion-image-single"><img src="/images/about-14.png" alt="つくば建築試験研究センター機関誌">
+                                <p class="hpd-about__accordion-image-caption">つくば建築試験研究センター機関誌</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hpd-about__accordion-two-sections">
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title teal">建設技術審査証明</h3>
+                            <p class="hpd-about__accordion-section-text">民間で開発された住宅等に関連する様々な新しい技術について審査し、普及を促進するために公正中立な立場から当該技術を評価し、審査証明書及びその報告書を作成します。</p>
+                          </div>
+                        </div>
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title teal">国際交流</h3>
+                            <p class="hpd-about__accordion-section-text">住宅・建築分野における国際交流を目的として、国内外の関係機関との交流・連携を図り、海外からの調査団や研修の受入れ、国際会議への参加などの活動を行っています。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hpd-about__accordion-item" data-color="purple">
+                    <div class="hpd-about__accordion-header"><span class="hpd-about__accordion-title">良質な住宅ストックの形成と活用の支援</span><span class="hpd-about__accordion-icon">+</span></div>
+                    <div class="hpd-about__accordion-content">
+                      <div class="hpd-about__accordion-two-sections">
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title purple">住宅・住宅部品に関する情報管理</h3>
+                            <p class="hpd-about__accordion-section-text">定期的な点検や交換が必要な住宅部品について、製品が設置された住戸を特定するためのトレーサビリティ情報の管理を行います。</p>
+                            <p class="hpd-about__accordion-section-text">住宅の点検・修繕等の維持管理やリフォーム、既存住宅売買時に活用される設計図書、修繕記録などの住宅履歴情報を保管・閲覧できる情報システムを提供します。</p>
+                            <div class="hpd-about__accordion-image-single purple"><img src="/images/about-15.png" alt="いえかるてのロゴマーク">
+                              <p class="hpd-about__accordion-image-caption">いえかるてのロゴマーク</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hpd-about__accordion-half-section">
+                          <div class="hpd-about__accordion-section">
+                            <h3 class="hpd-about__accordion-section-title purple">住宅リフォームの推進</h3>
+                            <p class="hpd-about__accordion-section-text">地域の中小リフォーム事業者の信頼性、提案力及び技術力の向上に向けた取り組みにより、消費者の安全・安心、便利な暮らしを実現するため、一般社団法人ベターライフリフォーム協会と協働して住宅リフォームを推進します。</p>
+                            <p class="hpd-about__accordion-section-text">この取り組みの一環として、リフォーム業務品質審査登録制度、ベターライフリフォームアドバイザー登録制度等のサービス提供を通じて、リフォーム事業者の品質向上を支援しています。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="hpd-footer">
+        <div class="hpd-footer__main">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__top">
+              <div class="hpd-footer__brand">
+                <div class="hpd-footer__contact">
+                  <div class="hpd-footer__contact-item"><span class="hpd-footer__contact-label">一般財団法人 ベターリビング</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="hpd-footer__nav">
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">優良住宅部品(BL部品)等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)認定制度</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)の検索・紹介</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 関連事業</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">試験・評定・証明・評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ご案内</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 性能試験・調査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 評定・証明・評価</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 研究レポート</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">建築確認検査・性能評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 建築確認検査・住宅性能評価等</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 構造計算適合性判定</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 環境関係評価(省エネ等)</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 保険・証明等に係る審査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 その他の法定業務</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">システム審査登録</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO9001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO14001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27701</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27017</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO45001</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">調査・研究・技術普及等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 サステナブル居住研究センター</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 A Quick Look at Housing in japan</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">住宅・住宅部品に関する情報管理</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅部品のトレーサビリティ情報管理</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅履歴情報管理支援サービス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link is-highlight" href="#">ベターライフリフォーム関連制度</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">財団のご案内</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">アクセス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">採用情報</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">English・中文</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">BLマガジン</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hpd-footer__horizontal-line">
+            <ul class="hpd-footer__horizontal-list">
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">個人情報保護方針</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">サイトポリシー</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトへのリンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">関連団体等リンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトに関するご意見</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hpd-footer__mobile">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__mobile-grid">
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">個人情報保護方針</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">サイトポリシー</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">当サイトへのリンク</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">関連団体等リンク</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hpd-footer__bottom">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__bottom-content">
+              <div class="hpd-footer__copyright">
+                <p class="hpd-footer__copyright-text">© 2026一般財団法人 ベターリビング</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./scripts/main.js"></script>
+    </div>
+  </body>
+</html>

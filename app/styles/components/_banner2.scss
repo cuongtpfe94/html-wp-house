@@ -1,0 +1,33 @@
+@use '../helpers/variables' as *;
+
+.hpd-banner2 {
+  background-color: var(--banner2-bg-color);
+  height: 300px;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__content {
+    &-title {
+      font-size: 50px;
+      color: var(--gray-color);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__image {
+    &-src {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
