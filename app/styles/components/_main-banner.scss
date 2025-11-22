@@ -24,6 +24,8 @@
   }
 
   &.is-blue {
+    background-color: #97a9b8;
+
     #{$root}__header {
       border-left: 10px solid var(--accordion-blue);
     }
@@ -35,12 +37,14 @@
   }
 
   &.is-orange {
+    background-color: #b8a691;
+
     #{$root}__header {
       border-left: 10px solid var(--accordion-orange);
     }
 
     #{$root}__badge {
-      background-color: #f9dfe0;
+      background-color: #fbe5ca;
       color: var(--accordion-orange);
     }
   }
