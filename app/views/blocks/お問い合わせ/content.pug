@@ -54,7 +54,59 @@
             p.hpd-inquiry__inquiry-note 各項目をご入力後、最後に「入力内容の確認」ボタンを押してください。
             p.hpd-inquiry__inquiry-note 入力内容が正しく送信されない場合があるため、特殊な記号文字（例：丸囲み文字など）は使用しないでください。
 
-          .hpd-inquiry__contact-header ご連絡先
+          .hpd-inquiry__field.hpd-inquiry__category-field-recruit(style='display: none;')
+            label.hpd-inquiry__label(for='category-recruit')
+              span.hpd-inquiry__label-text 内容
+              span.hpd-inquiry__required 必須
+            .hpd-inquiry__category-grid.hpd-inquiry__category-grid--vertical
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category-recruit' value='entry' checked)
+                span.hpd-inquiry__category-option-text エントリー
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category-recruit' value='one-day')
+                span.hpd-inquiry__category-option-text 1日仕事体験応募（説明会含む）
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category-recruit' value='internship')
+                span.hpd-inquiry__category-option-text インターンシップ応募
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category-recruit' value='inquiry')
+                span.hpd-inquiry__category-option-text お問い合わせ
+
+          .hpd-inquiry__recruit-fields.is-group(style='display: none;')
+            .hpd-inquiry__recruit-fields-title 学校
+            .hpd-inquiry__recruit-fields-content
+              .hpd-inquiry__field
+                label.hpd-inquiry__label(for='school-name')
+                  span.hpd-inquiry__label-text 学校名
+                  span.hpd-inquiry__required 必須
+                input.hpd-inquiry__input(type='text' id='school-name' name='school-name' placeholder='')
+
+              .hpd-inquiry__field
+                label.hpd-inquiry__label(for='department')
+                  span.hpd-inquiry__label-text 学部
+                  span.hpd-inquiry__required 必須
+                input.hpd-inquiry__input(type='text' id='department' name='department' placeholder='')
+
+              .hpd-inquiry__field
+                label.hpd-inquiry__label(for='major')
+                  span.hpd-inquiry__label-text 学科
+                  span.hpd-inquiry__required 必須
+                input.hpd-inquiry__input(type='text' id='major' name='major' placeholder='')
+
+              .hpd-inquiry__field
+                label.hpd-inquiry__label(for='year')
+                  span.hpd-inquiry__label-text 学年
+                  span.hpd-inquiry__required 必須
+                select.hpd-inquiry__select(id='year' name='year' required)
+                  option(value='4年生') 4年生
+                  option(value='3年生') 3年生
+                  option(value='2年生') 2年生
+                  option(value='1年生') 1年生
+                  option(value='修士2年') 修士2年
+                  option(value='修士1年') 修士1年
+                  option(value='博士') 博士
+
+          .hpd-inquiry__contact-header.hpd-inquiry__contact-header--main ご連絡先
 
           .hpd-inquiry__field
             label.hpd-inquiry__label(for='name')
@@ -103,9 +155,31 @@
               span.hpd-inquiry__required 必須
             input.hpd-inquiry__input(type='email' id='email' name='email' placeholder='例：better-living@cbl.or.jp' required)
 
-          .hpd-inquiry__contact-header お問い合わせ内容
+          .hpd-inquiry__recruit-fields(style='display: none;')
+            .hpd-inquiry__field
+              label.hpd-inquiry__label(for='resume')
+                span.hpd-inquiry__label-text 履歴書
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='resume' name='resume' accept='.pdf,.doc,.docx,.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='resume') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／PDF（.pdf）、Word（.docx）、Excel（.xlsx）のみです
 
-          .hpd-inquiry__field
+            .hpd-inquiry__field
+              label.hpd-inquiry__label(for='entry-sheet')
+                span.hpd-inquiry__label-text エントリーシート
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='entry-sheet' name='entry-sheet' accept='.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='entry-sheet') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／Excel（.xlsx）のみです
+                a.hpd-inquiry__file-link(href='#') 様式はこちら
+
+          .hpd-inquiry__contact-header.hpd-inquiry__content-header お問い合わせ内容
+
+          .hpd-inquiry__field.hpd-inquiry__category-field
             label.hpd-inquiry__label(for='category')
               span.hpd-inquiry__label-text カテゴリ
               span.hpd-inquiry__required 必須
@@ -135,11 +209,17 @@
                 input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='other')
                 span.hpd-inquiry__category-option-text その他
 
-          .hpd-inquiry__field
-            label.hpd-inquiry__label(for='content')
+          .hpd-inquiry__field.hpd-inquiry__subcategory-field(style='display: none;')
+            label.hpd-inquiry__label(for='subcategory')
+              span.hpd-inquiry__label-text 分野
+              span.hpd-inquiry__required 必須
+            .hpd-inquiry__category-grid
+
+          .hpd-inquiry__field.hpd-inquiry__content-field-simple(style='display: none;')
+            label.hpd-inquiry__label(for='content-simple')
               span.hpd-inquiry__label-text 内容
               span.hpd-inquiry__required 必須
-            textarea.hpd-inquiry__textarea(name='content' id='content' rows='8' placeholder='全角2,000文字以内で具体的にご記入ください' required)
+            textarea.hpd-inquiry__textarea(name='content-simple' id='content-simple' rows='8' placeholder='全角2,000文字以内で具体的にご記入ください' required)
 
           .hpd-inquiry__privacy
             p.hpd-inquiry__privacy-text
