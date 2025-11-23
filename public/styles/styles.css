@@ -4960,3 +4960,24 @@ body {
 .hpd-inquiry__file-link:hover {
   color: #0052a3;
 }
+.hpd-inquiry__recruit-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 60px auto 0;
+  border: 3px solid #828282;
+  border-radius: 12px;
+  max-width: 550px;
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hpd-inquiry__recruit-contact {
+    padding: 15px;
+  }
+}
+.hpd-inquiry__recruit-contact-image {
+  width: 20px;
+}
