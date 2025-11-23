@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="hpd-wrapper">
+      <header class="hpd-header">
+        <div class="hpd-header__main">
+          <div class="hpd-header__container">
+            <div class="hpd-header__logo"><a class="hpd-header__logo-link" href="/"><img class="hpd-header__logo-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+            <nav class="hpd-header__nav">
+              <ul class="hpd-header__nav-list">
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">ホーム財団のご案内</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">アクセス</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">採用情報</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">English・中文</a></li>
+              </ul>
+            </nav>
+            <div class="hpd-header__search">
+              <div class="hpd-header__search-text">BL部品でお困りの方</div>
+              <div class="hpd-header__search-text hpd-header__search-text--secondary">総合お問い合わせ</div>
+              <form class="hpd-header__search-form">
+                <input class="hpd-header__search-input" type="search" placeholder="サイト内検索">
+                <button class="hpd-header__search-button" type="submit" aria-label="サイト内検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <button class="hpd-header__menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span></button>
+          </div>
+        </div>
+        <div class="hpd-header__search-mobile">
+          <input class="hpd-header__search-input-mobile" type="search">
+        </div>
+        <div class="hpd-header__drawer">
+          <div class="hpd-header__drawer-overlay"></div>
+          <nav class="hpd-header__drawer-nav">
+            <div class="hpd-header__drawer-header">
+              <div class="hpd-header__drawer-logo"><a href="/"><img class="hpd-header__drawer-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+              <div>
+                <button class="hpd-header__drawer-search" type="submit" aria-label="検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+                <button class="hpd-header__drawer-close" aria-label="メニューを閉じる">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 39 40" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M36.6397 0.348385L0.294434 36.6936L2.15412 38.5533L38.4993 2.20807L36.6397 0.348385Z" fill="#333333"></path>
+                    <path d="M38.501 37.2001L2.15576 0.854858L0.296067 2.71455L36.6413 39.0598L38.501 37.2001Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="hpd-header__drawer-list">
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">TOP</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">優良住宅部品（BL部品）等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">試験・評定・証明・評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">建築確認検査・性能評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">システム審査登録</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">調査・研究・技術普及等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="hpd-header__drawer-list-secondary">
+              <li class="hpd-header__drawer-item-secondary"><a class="hpd-header__drawer-link-secondary" href="#">財団のご案内</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item-secondary">
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">アクセス</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">採用情報</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <div class="hpd-header__drawer-buttons">
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--primary">総合お問い合わせ</button>
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--secondary">BL部品でお困りの方</button>
+            </div>
+            <div class="hpd-header__drawer-footer">
+              <div class="hpd-header__drawer-sites"><a class="hpd-header__drawer-site" href="#">BLマガジン ＞</a><a class="hpd-header__drawer-site" href="#">English・中文 ＞</a></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="hpd-inquiry">
+        <div class="hpd-inquiry__container">
+          <nav class="hpd-breadcrumb2" aria-label="Breadcrumb">
+            <div class="hpd-breadcrumb2__container">
+              <ol class="hpd-breadcrumb2__list">
+                <li class="hpd-breadcrumb2__item"><a class="hpd-breadcrumb2__link" href="/">ホーム</a></li>
+                <li class="hpd-breadcrumb2__item"><span class="hpd-breadcrumb__separator">></span><span class="hpd-breadcrumb__current">ホーム</span></li>
+              </ol>
+            </div>
+          </nav>
+        </div>
+        <div class="hpd-inquiry__content">
+          <div class="hpd-inquiry__container">
+            <div class="hpd-inquiry__header">
+              <div class="hpd-inquiry__icon"><img src="/images/edit.png" alt="お問い合わせフォーム"></div>
+              <h1 class="hpd-inquiry__title">お問い合わせフォーム</h1>
+            </div>
+            <div class="hpd-inquiry__inner">
+              <div class="hpd-inquiry__intro">
+                <p class="hpd-inquiry__intro-text">お問い合わせ内容に該当する項目を選択し、入力画面へお進みください。</p>
+              </div>
+              <div class="hpd-inquiry__categories">
+                <div class="hpd-inquiry__category-row">
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="bl" checked><span class="hpd-inquiry__category-text">BL部品</span>
+                  </label>
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="test"><span class="hpd-inquiry__category-text">試験・評定</span>
+                  </label>
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="housing"><span class="hpd-inquiry__category-text">住宅・建築評価</span>
+                  </label>
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="iso"><span class="hpd-inquiry__category-text">ISO審査・登録</span>
+                  </label>
+                </div>
+                <div class="hpd-inquiry__category-row">
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="research"><span class="hpd-inquiry__category-text">調査・研究</span>
+                  </label>
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="recruit"><span class="hpd-inquiry__category-text">採用情報</span>
+                  </label>
+                  <label class="hpd-inquiry__category-label">
+                    <input class="hpd-inquiry__radio" type="radio" name="category" value="other"><span class="hpd-inquiry__category-text">その他</span>
+                  </label>
+                </div>
+              </div>
+              <div class="hpd-inquiry__info">
+                <ul class="hpd-inquiry__info-list">
+                  <li class="hpd-inquiry__info-item">・このフォームは、SSLにより安全に保護されています。</li>
+                  <li class="hpd-inquiry__info-item">・ご入力いただいた個人情報は、本サイトの個人情報保護方針に基づき、利用目的の範囲内で適切に取り扱います。</li>
+                  <li class="hpd-inquiry__info-item">・お問い合わせ内容によっては、回答までにお時間をいただくことがあります。</li>
+                </ul>
+              </div>
+              <form class="hpd-inquiry__form" action="#" method="POST">
+                <div class="hpd-inquiry__section-title">BL部品</div>
+                <div class="hpd-inquiry__inquiry-box">
+                  <p class="hpd-inquiry__inquiry-note">各項目をご入力後、最後に「入力内容の確認」ボタンを押してください。</p>
+                  <p class="hpd-inquiry__inquiry-note">入力内容が正しく送信されない場合があるため、特殊な記号文字（例：丸囲み文字など）は使用しないでください。</p>
+                </div>
+                <div class="hpd-inquiry__contact-header">ご連絡先</div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="name"><span class="hpd-inquiry__label-text">お名前</span><span class="hpd-inquiry__required">必須</span></label>
+                  <input class="hpd-inquiry__input" type="text" id="name" name="name" placeholder="例：山田　太郎" required>
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="name-kana"><span class="hpd-inquiry__label-text">お名前（ふりがな）</span><span class="hpd-inquiry__required">必須</span></label>
+                  <input class="hpd-inquiry__input" type="text" id="name-kana" name="name-kana" placeholder="例：やまだ　たろう" required>
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="company"><span class="hpd-inquiry__label-text">会社名・団体名</span><span class="hpd-inquiry__required">必須</span></label>
+                  <div class="hpd-inquiry__input-wrapper">
+                    <input class="hpd-inquiry__input" type="text" id="company" name="company" placeholder="例：一般財団法人ベターリビング" required>
+                    <p class="hpd-inquiry__note">※個人の方は「個人」とご記入ください</p>
+                  </div>
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="department"><span class="hpd-inquiry__label-text">部署名・役職等</span></label>
+                  <input class="hpd-inquiry__input" type="text" id="department" name="department" placeholder="例：総務部　部長">
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="address"><span class="hpd-inquiry__label-text">所在地・住所</span></label>
+                  <input class="hpd-inquiry__input" type="text" id="address" name="address" placeholder="例：東京都千代田区霞ヶ関○丁目○番○号">
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="phone"><span class="hpd-inquiry__label-text">電話番号</span><span class="hpd-inquiry__required">必須</span></label>
+                  <div class="hpd-inquiry__phone-group">
+                    <input class="hpd-inquiry__phone-input" type="tel" name="phone1" placeholder="03" required><span class="hpd-inquiry__phone-separator">-</span>
+                    <input class="hpd-inquiry__phone-input" type="tel" name="phone2" placeholder="2345" required><span class="hpd-inquiry__phone-separator">-</span>
+                    <input class="hpd-inquiry__phone-input" type="tel" name="phone3" placeholder="6789" required>
+                  </div>
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="email"><span class="hpd-inquiry__label-text">メールアドレス</span><span class="hpd-inquiry__required">必須</span></label>
+                  <input class="hpd-inquiry__input" type="email" id="email" name="email" placeholder="例：better-living@cbl.or.jp" required>
+                </div>
+                <div class="hpd-inquiry__contact-header">お問い合わせ内容</div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="category"><span class="hpd-inquiry__label-text">カテゴリ</span><span class="hpd-inquiry__required">必須</span></label>
+                  <div class="hpd-inquiry__category-grid">
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="bl-trouble" checked><span class="hpd-inquiry__category-option-text">BL部品でお困りの場合</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="bl-standard"><span class="hpd-inquiry__category-option-text">BL認定基準</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="bl-application"><span class="hpd-inquiry__category-option-text">BL認定申請</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="bl-certificate"><span class="hpd-inquiry__category-option-text">BLマーク証紙</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="jis"><span class="hpd-inquiry__category-option-text">JIS製品認証</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="traceability-alarm"><span class="hpd-inquiry__category-option-text">トレーサビリティ関連（住警器）</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="traceability-led"><span class="hpd-inquiry__category-option-text">トレーサビリティ関連（LED）</span>
+                    </label>
+                    <label class="hpd-inquiry__category-option">
+                      <input class="hpd-inquiry__radio" type="radio" name="inquiry-category" value="other"><span class="hpd-inquiry__category-option-text">その他</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="hpd-inquiry__field">
+                  <label class="hpd-inquiry__label" for="content"><span class="hpd-inquiry__label-text">内容</span><span class="hpd-inquiry__required">必須</span></label>
+                  <textarea class="hpd-inquiry__textarea" name="content" id="content" rows="8" placeholder="全角2,000文字以内で具体的にご記入ください" required></textarea>
+                </div>
+                <div class="hpd-inquiry__privacy">
+                  <p class="hpd-inquiry__privacy-text"><a class="hpd-inquiry__privacy-link" href="#" target="_blank">個人情報保護方針</a>をご確認のうえ、「同意する」にチェックを入れてください。</p>
+                  <p class="hpd-inquiry__privacy-text">ご了承いただけない場合は、入力内容を送信できませんので、あらかじめご了承ください。</p>
+                </div>
+                <div class="hpd-inquiry__checkbox">
+                  <label class="hpd-inquiry__checkbox-label">
+                    <input class="hpd-inquiry__checkbox-input" type="checkbox" name="privacy" required><span class="hpd-inquiry__checkbox-text">同意する</span>
+                  </label>
+                </div>
+                <div class="hpd-inquiry__submit">
+                  <button class="hpd-inquiry__button" type="submit">入力内容の確認</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="hpd-footer">
+        <div class="hpd-footer__main">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__top">
+              <div class="hpd-footer__brand">
+                <div class="hpd-footer__contact">
+                  <div class="hpd-footer__contact-item"><span class="hpd-footer__contact-label">一般財団法人 ベターリビング</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="hpd-footer__nav">
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">優良住宅部品(BL部品)等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)認定制度</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)の検索・紹介</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 関連事業</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">試験・評定・証明・評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ご案内</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 性能試験・調査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 評定・証明・評価</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 研究レポート</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">建築確認検査・性能評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 建築確認検査・住宅性能評価等</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 構造計算適合性判定</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 環境関係評価(省エネ等)</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 保険・証明等に係る審査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 その他の法定業務</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">システム審査登録</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO9001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO14001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27701</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27017</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO45001</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">調査・研究・技術普及等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 サステナブル居住研究センター</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 A Quick Look at Housing in japan</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">住宅・住宅部品に関する情報管理</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅部品のトレーサビリティ情報管理</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅履歴情報管理支援サービス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link is-highlight" href="#">ベターライフリフォーム関連制度</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">財団のご案内</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">アクセス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">採用情報</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">English・中文</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">BLマガジン</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hpd-footer__horizontal-line">
+            <ul class="hpd-footer__horizontal-list">
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">個人情報保護方針</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">サイトポリシー</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトへのリンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">関連団体等リンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトに関するご意見</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hpd-footer__mobile">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__mobile-grid">
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">個人情報保護方針</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">サイトポリシー</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">当サイトへのリンク</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">関連団体等リンク</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hpd-footer__bottom">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__bottom-content">
+              <div class="hpd-footer__copyright">
+                <p class="hpd-footer__copyright-text">© 2026一般財団法人 ベターリビング</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/slider.js"></script>
+    </div>
+  </body>
+</html>

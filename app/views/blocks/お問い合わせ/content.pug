@@ -1,0 +1,157 @@
+.hpd-inquiry
+  .hpd-inquiry__container
+    include ../../blocks/breadcrum2
+
+  .hpd-inquiry__content
+    .hpd-inquiry__container
+
+      .hpd-inquiry__header
+        .hpd-inquiry__icon
+          img(src='/images/edit.png' alt='お問い合わせフォーム')
+        h1.hpd-inquiry__title お問い合わせフォーム
+
+      .hpd-inquiry__inner
+        .hpd-inquiry__intro
+          p.hpd-inquiry__intro-text お問い合わせ内容に該当する項目を選択し、入力画面へお進みください。
+
+        .hpd-inquiry__categories
+          .hpd-inquiry__category-row
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='bl' checked)
+              span.hpd-inquiry__category-text BL部品
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='test')
+              span.hpd-inquiry__category-text 試験・評定
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='housing')
+              span.hpd-inquiry__category-text 住宅・建築評価
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='iso')
+              span.hpd-inquiry__category-text ISO審査・登録
+
+          .hpd-inquiry__category-row
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='research')
+              span.hpd-inquiry__category-text 調査・研究
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='recruit')
+              span.hpd-inquiry__category-text 採用情報
+            label.hpd-inquiry__category-label
+              input.hpd-inquiry__radio(type='radio' name='category' value='other')
+              span.hpd-inquiry__category-text その他
+
+        .hpd-inquiry__info
+          ul.hpd-inquiry__info-list
+            li.hpd-inquiry__info-item ・このフォームは、SSLにより安全に保護されています。
+            li.hpd-inquiry__info-item ・ご入力いただいた個人情報は、本サイトの個人情報保護方針に基づき、利用目的の範囲内で適切に取り扱います。
+            li.hpd-inquiry__info-item ・お問い合わせ内容によっては、回答までにお時間をいただくことがあります。
+
+        form.hpd-inquiry__form(action='#' method='POST')
+
+          .hpd-inquiry__section-title BL部品
+
+          .hpd-inquiry__inquiry-box
+            p.hpd-inquiry__inquiry-note 各項目をご入力後、最後に「入力内容の確認」ボタンを押してください。
+            p.hpd-inquiry__inquiry-note 入力内容が正しく送信されない場合があるため、特殊な記号文字（例：丸囲み文字など）は使用しないでください。
+
+          .hpd-inquiry__contact-header ご連絡先
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='name')
+              span.hpd-inquiry__label-text お名前
+              span.hpd-inquiry__required 必須
+            input.hpd-inquiry__input(type='text' id='name' name='name' placeholder='例：山田　太郎' required)
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='name-kana')
+              span.hpd-inquiry__label-text お名前（ふりがな）
+              span.hpd-inquiry__required 必須
+            input.hpd-inquiry__input(type='text' id='name-kana' name='name-kana' placeholder='例：やまだ　たろう' required)
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='company')
+              span.hpd-inquiry__label-text 会社名・団体名
+              span.hpd-inquiry__required 必須
+            .hpd-inquiry__input-wrapper
+              input.hpd-inquiry__input(type='text' id='company' name='company' placeholder='例：一般財団法人ベターリビング' required)
+              p.hpd-inquiry__note ※個人の方は「個人」とご記入ください
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='department')
+              span.hpd-inquiry__label-text 部署名・役職等
+            input.hpd-inquiry__input(type='text' id='department' name='department' placeholder='例：総務部　部長')
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='address')
+              span.hpd-inquiry__label-text 所在地・住所
+            input.hpd-inquiry__input(type='text' id='address' name='address' placeholder='例：東京都千代田区霞ヶ関○丁目○番○号')
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='phone')
+              span.hpd-inquiry__label-text 電話番号
+              span.hpd-inquiry__required 必須
+            .hpd-inquiry__phone-group
+              input.hpd-inquiry__phone-input(type='tel' name='phone1' placeholder='03' required)
+              span.hpd-inquiry__phone-separator -
+              input.hpd-inquiry__phone-input(type='tel' name='phone2' placeholder='2345' required)
+              span.hpd-inquiry__phone-separator -
+              input.hpd-inquiry__phone-input(type='tel' name='phone3' placeholder='6789' required)
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='email')
+              span.hpd-inquiry__label-text メールアドレス
+              span.hpd-inquiry__required 必須
+            input.hpd-inquiry__input(type='email' id='email' name='email' placeholder='例：better-living@cbl.or.jp' required)
+
+          .hpd-inquiry__contact-header お問い合わせ内容
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='category')
+              span.hpd-inquiry__label-text カテゴリ
+              span.hpd-inquiry__required 必須
+            .hpd-inquiry__category-grid
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='bl-trouble' checked)
+                span.hpd-inquiry__category-option-text BL部品でお困りの場合
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='bl-standard')
+                span.hpd-inquiry__category-option-text BL認定基準
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='bl-application')
+                span.hpd-inquiry__category-option-text BL認定申請
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='bl-certificate')
+                span.hpd-inquiry__category-option-text BLマーク証紙
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='jis')
+                span.hpd-inquiry__category-option-text JIS製品認証
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='traceability-alarm')
+                span.hpd-inquiry__category-option-text トレーサビリティ関連（住警器）
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='traceability-led')
+                span.hpd-inquiry__category-option-text トレーサビリティ関連（LED）
+              label.hpd-inquiry__category-option
+                input.hpd-inquiry__radio(type='radio' name='inquiry-category' value='other')
+                span.hpd-inquiry__category-option-text その他
+
+          .hpd-inquiry__field
+            label.hpd-inquiry__label(for='content')
+              span.hpd-inquiry__label-text 内容
+              span.hpd-inquiry__required 必須
+            textarea.hpd-inquiry__textarea(name='content' id='content' rows='8' placeholder='全角2,000文字以内で具体的にご記入ください' required)
+
+          .hpd-inquiry__privacy
+            p.hpd-inquiry__privacy-text
+              a.hpd-inquiry__privacy-link(href='#' target='_blank') 個人情報保護方針
+              | をご確認のうえ、「同意する」にチェックを入れてください。
+            p.hpd-inquiry__privacy-text ご了承いただけない場合は、入力内容を送信できませんので、あらかじめご了承ください。
+
+          .hpd-inquiry__checkbox
+            label.hpd-inquiry__checkbox-label
+              input.hpd-inquiry__checkbox-input(type='checkbox' name='privacy' required)
+              span.hpd-inquiry__checkbox-text 同意する
+
+          .hpd-inquiry__submit
+            button.hpd-inquiry__button(type='submit') 入力内容の確認
+
