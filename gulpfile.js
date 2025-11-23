@@ -21,6 +21,7 @@ const options = {
       'app/views/010/**',
       'app/views/について/**',
       'app/views/メイン/**',
+      'app/views/メルマガ登録フォーム/**',
     ],
     dest: 'public',
     all: 'app/views/**/*.pug',

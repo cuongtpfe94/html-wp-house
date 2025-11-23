@@ -1,0 +1,59 @@
+.hpd-mail-form
+  .hpd-mail-form__container
+    include ../../blocks/breadcrum2
+
+  .hpd-mail-form__content
+    .hpd-mail-form__container
+
+      .hpd-mail-form__header
+        .hpd-mail-form__icon
+          img(src='/images/envelop.png' alt='メルマガ登録フォーム')
+        h1.hpd-mail-form__title BLマガジン新規登録フォーム
+
+      .hpd-mail-form__inner
+        .hpd-mail-form__info
+          ul.hpd-mail-form__info-list
+            li.hpd-mail-form__info-item ・このフォームは、SSLにより安全に保護されています。
+            li.hpd-mail-form__info-item ・ご入力いただいた個人情報は、本サイトの個人情報保護方針に基づき、利用目的の範囲内で適切に取り扱います。
+            li.hpd-mail-form__info-item ・登録から1か月以上たってもメールマガジンが届かない場合は、再度ご登録をお願いいたします。
+
+        form.hpd-mail-form__form(action='#' method='POST')
+
+          .hpd-mail-form__field
+            label.hpd-mail-form__label(for='name')
+              span.hpd-mail-form__label-text お名前
+              span.hpd-mail-form__required 必須
+            input.hpd-mail-form__input(type='text' id='name' name='name' placeholder='例：山田　太郎' required)
+
+          .hpd-mail-form__field
+            label.hpd-mail-form__label(for='company')
+              span.hpd-mail-form__label-text 会社名・団体名
+              span.hpd-mail-form__required 必須
+            input.hpd-mail-form__input(type='text' id='company' name='company' placeholder='例：一般財団法人ベターリビング' required)
+            p.hpd-mail-form__note ※個人の方は「個人」とご記入ください
+
+          .hpd-mail-form__field
+            label.hpd-mail-form__label(for='department')
+              span.hpd-mail-form__label-text 部署名・役職等
+            input.hpd-mail-form__input(type='text' id='department' name='department' placeholder='例：総務部　部長')
+
+          .hpd-mail-form__field
+            label.hpd-mail-form__label(for='email')
+              span.hpd-mail-form__label-text メールアドレス
+              span.hpd-mail-form__required 必須
+            input.hpd-mail-form__input(type='email' id='email' name='email' placeholder='例：better-living@cbl.or.jp' required)
+            p.hpd-mail-form__note ※入力に間違いがありますと届きませんのでお気を付けください。
+
+          .hpd-mail-form__privacy
+            p.hpd-mail-form__privacy-text
+              a.hpd-mail-form__privacy-link(href='#' target='_blank') 個人情報保護方針
+              | をご確認のうえ、「同意する」にチェックを入れてください。
+            p.hpd-mail-form__privacy-text ご了承いただけない場合は、入力内容を送信できませんので、あらかじめご了承ください。
+
+          .hpd-mail-form__checkbox
+            label.hpd-mail-form__checkbox-label
+              input.hpd-mail-form__checkbox-input(type='checkbox' name='privacy' required)
+              span.hpd-mail-form__checkbox-text 同意する
+
+          .hpd-mail-form__submit
+            button.hpd-mail-form__button(type='submit') 入力内容の確認

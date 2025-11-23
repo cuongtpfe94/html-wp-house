@@ -9,7 +9,7 @@ mixin checklist(title, items = [])
             each item in items
               a.hpd-checklist__button.is-auto(href="#")= item
 
-mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange', items = [])
+mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' | 'is-teal' | 'is-purple', items = [])
   .hpd-main-banner(class=color)
     .hpd-main-banner__content
       .hpd-main-banner__header
@@ -28,7 +28,8 @@ mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange',
                 span.hpd-main-banner__arrow >
 
     .hpd-main-banner__image
-      img(src=image alt=title)
+      if image
+        img(src=image alt=title)
 
 mixin sectionHeader(title, color = 'is-red')
   .hpd-section-header(class=color)

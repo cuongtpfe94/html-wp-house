@@ -13,11 +13,19 @@
   }
 
   &.is-blue {
-    background: linear-gradient(135deg, #e4f0fa 0%, #d4e6f5 100%);
+    background: #d3e5f1;
   }
 
   &.is-orange {
-    background: linear-gradient(135deg, #fef0e4 0%, #fee5d4 100%);
+    background: #fbe5ca;
+  }
+
+  &.is-teal {
+    background: #e0f5f5;
+  }
+
+  &.is-purple {
+    background: #e7dde7;
   }
 
   &__link {

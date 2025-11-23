@@ -1,0 +1,58 @@
+.hpd-main-4
+  .hpd-main-4__container
+    include ../../blocks/breadcrum2
+  -
+    var noticeItems = [
+      { date: '2025.6.11', title: '70文字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○', link: '#' },
+      { date: '2025.6.11', title: '○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○', link: '#' },
+      { date: '2025.6.11', title: '○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○', link: '#' }
+    ]
+  +banner('', '調査・研究・技術普及等', '住宅・建築評価センター', 'is-teal', noticeItems)
+
+  .hpd-main-4__content
+    .hpd-main-4__container
+
+      .hpd-main-4__section
+        +sectionHeader('少子高齢社会やストック型社会への対応に関する調査研究・論文等', 'is-teal')
+        .hpd-main-4__section-body
+          .hpd-main-4__columns
+            .hpd-main-4__column
+              ul.hpd-main-4__list
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') サステナブル居住研究センターについて
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') サステナブル居住研究センター長ごあいさつ
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') 主な研究成果
+
+            .hpd-main-4__column
+              ul.hpd-main-4__list
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') 研究報告会・研究年報等
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') 研究レポート
+
+      .hpd-main-4__section
+        +sectionHeader('日本の建築規制、住宅事情・住宅政策等に関する情報', 'is-teal')
+        .hpd-main-4__section-body
+          .hpd-main-4__columns
+            .hpd-main-4__column
+              ul.hpd-main-4__list
+                li.hpd-main-4__item
+                  a.hpd-main-4__link(href='#') A Quick Look at Housing in Japan　日本語版（Japanese）・英語版（English）
+
+      .hpd-main-4__slider-section
+        -
+          var sliderItems = [
+            { title: '人生100年時代のリフォーム応援ナビサイト', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: 'ガス＋自まちをつくる。BLUE&GREEN PROJECT', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: 'こうんじでしたか？住宅部品', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: '既存賃貸集合住宅の省エネ化支援事業', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: '優良住宅部品認定制度ハンドブック', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: '優良住宅部品認定制度ハンドブック2', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○'},
+            { title: '優良住宅部品認定制度ハンドブック3', description: '文字30字程度○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○' }
+          ]
+        +slider(sliderItems)
+
+  .hpd-main-4__contact-section
+    +contactBox('調査・研究・技術普及等に関するお問い合わせ', '#contact', 'is-teal')

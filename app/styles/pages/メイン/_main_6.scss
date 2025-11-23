@@ -1,0 +1,36 @@
+@use '../../helpers/variables' as *;
+
+.hpd-main-6 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  &__content {
+    padding: 60px 0 0;
+
+    @media (max-width: 767px) {
+      padding: 40px 0 0;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__contact-section {
+    margin-top: auto;
+  }
+}

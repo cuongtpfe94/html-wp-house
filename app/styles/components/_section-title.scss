@@ -24,6 +24,13 @@
     }
   }
 
+  &.is-teal {
+    #{$root}__title {
+      background-color: #e4f0fa;
+      border: 3px solid var(--accordion-teal);
+    }
+  }
+
   &__title {
     font-size: 20px;
     color: var(--gray-dark-color-700);
