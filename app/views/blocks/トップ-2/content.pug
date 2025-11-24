@@ -1,0 +1,80 @@
+.hpd-top-2
+  .hpd-top-2__container
+    include ../../blocks/breadcrum2
+
+    h3.hpd-top-2__title 過去のお知らせ一覧
+
+  .hpd-top-2__content
+    .hpd-top-2__container
+      .hpd-top-2__layout
+
+        aside.hpd-top-2__sidebar
+          .hpd-top-2__filter-group
+            h4.hpd-top-2__filter-btn.is-all すべて
+            button.hpd-top-2__filter-btn ニュースリリース
+
+          .hpd-top-2__filter-group
+            h4.hpd-top-2__filter-title カテゴリーから探す
+            button.hpd-top-2__filter-btn.is-active すべて
+            button.hpd-top-2__filter-btn 財団案内
+            button.hpd-top-2__filter-btn BL部品
+            button.hpd-top-2__filter-btn 試験評定
+            button.hpd-top-2__filter-btn 住宅建築評価
+            button.hpd-top-2__filter-btn ISO審査登録
+            button.hpd-top-2__filter-btn 調査研究
+
+          .hpd-top-2__filter-group
+            h4.hpd-top-2__filter-title 公開年度から探す
+            button.hpd-top-2__filter-btn.is-all すべて
+            button.hpd-top-2__filter-btn 2026年度
+            button.hpd-top-2__filter-btn 2025年度
+            button.hpd-top-2__filter-btn 2024年度
+            button.hpd-top-2__filter-btn 2023年度
+            button.hpd-top-2__filter-btn 2022年度
+            button.hpd-top-2__filter-btn 2021年度
+            button.hpd-top-2__filter-btn 2020年度
+            button.hpd-top-2__filter-btn 2019年度
+            button.hpd-top-2__filter-btn 2018年度
+            button.hpd-top-2__filter-btn 2017年度
+            button.hpd-top-2__filter-btn 2016年度
+            button.hpd-top-2__filter-btn 2015年度
+
+          .hpd-top-2__filter-group
+            h4.hpd-top-2__filter-title キーワードから探す
+            .hpd-top-2__search
+              input.hpd-top-2__search-input(type='text' placeholder='')
+              button.hpd-top-2__search-btn
+                span 🔍
+
+        main.hpd-top-2__main
+          .hpd-top-2__header
+            p.hpd-top-2__results 全件表示中（187件）｜2025年度｜2024年度｜2023年度
+
+          .hpd-top-2__list
+            each item in Array(20).fill({date: '2025.4.00', category: 'BL部品', text: '1行50文字程度〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇'})
+              a.hpd-top-2__item(href='#')
+                .hpd-top-2__item-inner
+                  .hpd-top-2__item-header
+                    time.hpd-top-2__item-date= item.date
+                    span.hpd-top-2__item-category= item.category
+                  p.hpd-top-2__item-text= item.text
+                .hpd-top-2__item-arrow
+                  span >
+
+          .hpd-top-2__pagination
+            button.hpd-top-2__page-btn.is-active 1
+            button.hpd-top-2__page-btn.is-prev
+              span ＜
+            button.hpd-top-2__page-btn 2
+            button.hpd-top-2__page-btn 3
+            button.hpd-top-2__page-btn 4
+            button.hpd-top-2__page-btn 5
+            button.hpd-top-2__page-btn 6
+            button.hpd-top-2__page-btn 7
+            button.hpd-top-2__page-btn 8
+            button.hpd-top-2__page-btn 9
+            button.hpd-top-2__page-btn 10
+            span.hpd-top-2__page-dots ...
+            button.hpd-top-2__page-btn 20
+            button.hpd-top-2__page-btn.is-next
+              span ＞
