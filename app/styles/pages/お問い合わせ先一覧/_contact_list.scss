@@ -1,0 +1,155 @@
+@use '../../helpers/variables' as *;
+
+.hpd-contact-list {
+  min-height: 100vh;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__content {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__header {
+    background-color: #828282;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 40px;
+
+    @media (max-width: 767px) {
+      padding: 20px 25px;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: var(--white-color);
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+
+  &__section {
+    max-width: 900px;
+    margin: 0 auto 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__section-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--gray-color);
+    margin: 0 0 30px 0;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__table-wrapper {
+    overflow-x: auto;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 767px) {
+      min-width: 600px;
+    }
+  }
+
+  &__th {
+    background-color: #828282;
+    color: var(--white-color);
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--white-color);
+    text-align: center;
+
+    @media (max-width: 767px) {
+      padding: 14px 16px;
+      font-size: 14px;
+    }
+
+    &:nth-child(1) {
+      width: 35%;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+
+    &:nth-child(3) {
+      width: 25%;
+    }
+  }
+
+  &__td {
+    padding: 18px 20px;
+    font-size: 15px;
+    color: var(--gray-dark-color-700);
+    vertical-align: middle;
+
+    &.is-border {
+      border-left: 1px dashed #828282;
+      border-right: 1px dashed #828282;
+    }
+
+    @media (max-width: 767px) {
+      padding: 14px 16px;
+      font-size: 14px;
+    }
+  }
+
+  tbody tr {
+    transition: background-color 0.2s ease;
+
+    &.is-gray {
+      background-color: #f4f4f4;
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  &__inner {
+    background-color: var(--white-color);
+    padding-top: 60px;
+  }
+}
