@@ -75,6 +75,19 @@
     }
   }
 
+  &.is-yellow {
+    background-color: #a79d73;
+
+    #{$root}__header {
+      border-left: 10px solid var(--accordion-yellow);
+    }
+
+    #{$root}__badge {
+      background-color: #fdf7dd;
+      color: var(--accordion-yellow);
+    }
+  }
+
   &__content {
     flex: 1;
     display: flex;

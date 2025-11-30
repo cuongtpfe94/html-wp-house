@@ -2006,6 +2006,16 @@ body {
   background-color: #e4f0fa;
   color: var(--accordion-purple);
 }
+.hpd-main-banner.is-yellow {
+  background-color: #a79d73;
+}
+.hpd-main-banner.is-yellow .hpd-main-banner__header {
+  border-left: 10px solid var(--accordion-yellow);
+}
+.hpd-main-banner.is-yellow .hpd-main-banner__badge {
+  background-color: #fdf7dd;
+  color: var(--accordion-yellow);
+}
 .hpd-main-banner__content {
   flex: 1;
   display: flex;
@@ -2418,6 +2428,9 @@ body {
 }
 .hpd-contact-box.is-purple {
   background: #e7dde7;
+}
+.hpd-contact-box.is-yellow {
+  background: #fbf1c4;
 }
 .hpd-contact-box__link {
   display: flex;
@@ -5076,6 +5089,10 @@ body {
 }
 .hpd-main-5__content {
   padding: 60px 0 0;
+  background: #707070;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .hpd-main-5__content {
@@ -5109,6 +5126,10 @@ body {
 }
 .hpd-main-6__content {
   padding: 60px 0 0;
+  background: #707070;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .hpd-main-6__content {
