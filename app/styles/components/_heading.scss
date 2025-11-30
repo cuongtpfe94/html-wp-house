@@ -13,4 +13,12 @@
     text-align: left;
     padding-left: 20px;
   }
+
+  &.is-yellow {
+    background-color: #faebcc;
+
+    .hpd-heading__title {
+      color: #8a6d3b;
+    }
+  }
 }

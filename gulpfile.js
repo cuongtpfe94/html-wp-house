@@ -12,6 +12,7 @@ const options = {
       'app/views/*.pug',
       'app/views/!blocks/**',
       'app/views/!layout/**',
+      'app/views/003/**',
       'app/views/004/**',
       'app/views/005/**',
       'app/views/006/**',

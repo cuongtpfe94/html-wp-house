@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003 - 1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="hpd-wrapper">
+      <header class="hpd-header">
+        <div class="hpd-header__main">
+          <div class="hpd-header__container">
+            <div class="hpd-header__logo"><a class="hpd-header__logo-link" href="/"><img class="hpd-header__logo-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+            <nav class="hpd-header__nav">
+              <ul class="hpd-header__nav-list">
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">ホーム財団のご案内</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">アクセス</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">採用情報</a></li>
+                <li class="hpd-header__nav-item"><a class="hpd-header__nav-link" href="#">English・中文</a></li>
+              </ul>
+            </nav>
+            <div class="hpd-header__search">
+              <div class="hpd-header__search-text">BL部品でお困りの方</div>
+              <div class="hpd-header__search-text hpd-header__search-text--secondary">総合お問い合わせ</div>
+              <form class="hpd-header__search-form">
+                <input class="hpd-header__search-input" type="search" placeholder="サイト内検索">
+                <button class="hpd-header__search-button" type="submit" aria-label="サイト内検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <button class="hpd-header__menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span><span class="hpd-header__menu-toggle-line"></span></button>
+          </div>
+        </div>
+        <div class="hpd-header__search-mobile">
+          <input class="hpd-header__search-input-mobile" type="search">
+        </div>
+        <div class="hpd-header__drawer">
+          <div class="hpd-header__drawer-overlay"></div>
+          <nav class="hpd-header__drawer-nav">
+            <div class="hpd-header__drawer-header">
+              <div class="hpd-header__drawer-logo"><a href="/"><img class="hpd-header__drawer-image" src="/images/logo.png" alt="ベターリビング"></a></div>
+              <div>
+                <button class="hpd-header__drawer-search" type="submit" aria-label="検索">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 46 46" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M44.75 41.9299L32.1101 29.4499C34.6101 26.3999 36.1201 22.4999 36.1201 18.2599C36.1201 8.52989 28.2 0.609863 18.47 0.609863C8.73997 0.609863 0.820068 8.52989 0.820068 18.2599C0.820068 27.9899 8.73997 35.9099 18.47 35.9099C22.63 35.9099 26.46 34.4599 29.48 32.0399L42.1599 44.5599C42.5199 44.9199 42.99 45.0899 43.46 45.0899C43.93 45.0899 44.42 44.9099 44.78 44.5399C45.5 43.8099 45.49 42.6399 44.76 41.9199L44.75 41.9299ZM4.51001 18.2599C4.51001 10.5699 10.77 4.30988 18.46 4.30988C26.15 4.30988 32.4099 10.5699 32.4099 18.2599C32.4099 25.9499 26.15 32.2099 18.46 32.2099C10.77 32.2099 4.51001 25.9499 4.51001 18.2599Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+                <button class="hpd-header__drawer-close" aria-label="メニューを閉じる">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 39 40" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M36.6397 0.348385L0.294434 36.6936L2.15412 38.5533L38.4993 2.20807L36.6397 0.348385Z" fill="#333333"></path>
+                    <path d="M38.501 37.2001L2.15576 0.854858L0.296067 2.71455L36.6413 39.0598L38.501 37.2001Z" fill="#333333"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="hpd-header__drawer-list">
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">TOP</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">優良住宅部品（BL部品）等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">試験・評定・証明・評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">建築確認検査・性能評価等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">システム審査登録</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item"><a class="hpd-header__drawer-link" href="#">調査・研究・技術普及等</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <ul class="hpd-header__drawer-list-secondary">
+              <li class="hpd-header__drawer-item-secondary"><a class="hpd-header__drawer-link-secondary" href="#">財団のご案内</a>
+                <button class="hpd-header__drawer-arrow">
+                  <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                    <script xmlns=""></script>
+                    <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                    <script xmlns=""></script>
+                  </svg>
+                </button>
+              </li>
+              <li class="hpd-header__drawer-item-secondary">
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">アクセス</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hpd-header__drawer-item-secondary-link"><a class="hpd-header__drawer-link-secondary" href="#">採用情報</a>
+                  <button class="hpd-header__drawer-arrow">
+                    <svg class="mdl-js" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 15 20" fill="none">
+                      <script xmlns=""></script>
+                      <path d="M1.89966 18.2L11.8997 9.69995L1.89966 1.19995" stroke="#7F7F7F" stroke-width="3" stroke-miterlimit="10"></path>
+                      <script xmlns=""></script>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <div class="hpd-header__drawer-buttons">
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--primary">総合お問い合わせ</button>
+              <button class="hpd-header__drawer-button hpd-header__drawer-button--secondary">BL部品でお困りの方</button>
+            </div>
+            <div class="hpd-header__drawer-footer">
+              <div class="hpd-header__drawer-sites"><a class="hpd-header__drawer-site" href="#">BLマガジン ＞</a><a class="hpd-header__drawer-site" href="#">English・中文 ＞</a></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="hpd-003">
+        <div class="hpd-003__container">
+          <nav class="hpd-breadcrumb is-yellow" aria-label="Breadcrumb">
+            <div class="hpd-breadcrumb__container">
+              <ol class="hpd-breadcrumb__list">
+                <li class="hpd-breadcrumb__item"><a class="hpd-breadcrumb__link" href="/">HOME</a></li>
+                <li class="hpd-breadcrumb__item"><span class="hpd-breadcrumb__separator">></span><a class="hpd-breadcrumb__link" href="#">建築確認検査・住宅性能評価等（住宅・建築評価センター）</a></li>
+                <li class="hpd-breadcrumb__item"><span class="hpd-breadcrumb__separator">></span><span class="hpd-breadcrumb__current">CASBEE建築評価認証</span></li>
+              </ol>
+            </div>
+          </nav>
+          <div class="hpd-banner">
+            <div class="hpd-banner__container">
+              <div class="hpd-banner__image"><img class="hpd-banner__image-src" src="/images/banner.jpg" alt="banner"></div>
+              <div class="hpd-banner__content">
+                <h2 class="hpd-banner__content-title">優良住宅部品（BL部品）等（住宅部品・関連事業推進本部）</h2>
+              </div>
+            </div>
+          </div>
+          <div class="hpd-003__content">
+            <aside class="hpd-sidebar">
+              <div class="hpd-sidebar__accordion">
+                <div class="hpd-sidebar__item">
+                  <button class="hpd-sidebar__header" type="button" aria-expanded="false"><span class="hpd-sidebar__title">建築確認検査・住宅性能評価等</span><span class="hpd-sidebar__icon">▼</span></button>
+                  <div class="hpd-sidebar__content">
+                    <div class="hpd-sidebar__section"><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">建築確認検査</a>
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">・申請書類ダウンロード</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">・申請の手続き</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">　計画変更確認申請の要領</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">　軽微な変更説明書の要領</a></li>
+                      </ul>
+                    </div>
+                    <div class="hpd-sidebar__section"><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">住宅性能評価</a>
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">・申請書等ダウンロード</a></li>
+                        <li class="hpd-sidebar__list-item"></li>
+                      </ul><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">長期優良住宅の確認（新築）</a><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">長期優良住宅の確認（増築・改築）</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hpd-sidebar__item">
+                  <button class="hpd-sidebar__header" type="button" aria-expanded="false"><span class="hpd-sidebar__title">構造計算適合性判定</span><span class="hpd-sidebar__icon">▼</span></button>
+                  <div class="hpd-sidebar__content">
+                    <div class="hpd-sidebar__section"><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">構造計算適合性判定</a>
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">・WEB申請システムのご案内</a></li>
+                        <li class="hpd-sidebar__list-item"></li>
+                      </ul><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">構造計算適合性判定（任意）</a><a class="hpd-sidebar__link hpd-sidebar__section-title" href="#">構造図書のピアレビュー、ピアチェック等</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hpd-sidebar__item">
+                  <button class="hpd-sidebar__header" type="button" aria-expanded="false"><span class="hpd-sidebar__title">環境関係評価（省エネ等）</span><span class="hpd-sidebar__icon">▼</span></button>
+                  <div class="hpd-sidebar__content">
+                    <div class="hpd-sidebar__section">
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">省エネ適合性判定</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">省エネ性能評価</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">省エネ相談窓口等</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">BELSに係る評価</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">建築物省エネ法に基づく性能向上計画認定（30条）の技術的審査</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">CASBEE建築評価認証</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">CASBEE戸建評価認証</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">CASBEE不動産評価認証</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">CASBEEウェルネスオフィス評価認証</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">低炭素建築物等技術的審査</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">建築物等のエネルギー消費性能に係る任意評定</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">東京ゼロエミ住宅認証</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="hpd-sidebar__item">
+                  <button class="hpd-sidebar__header" type="button" aria-expanded="false"><span class="hpd-sidebar__title">保険・証明等に係る審査</span><span class="hpd-sidebar__icon">▼</span></button>
+                  <div class="hpd-sidebar__content">
+                    <div class="hpd-sidebar__section">
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">フラット３５等の適合証明</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">贈与税に係る住宅性能証明書</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">住宅瑕疵担保責任保険</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="hpd-sidebar__item">
+                  <button class="hpd-sidebar__header" type="button" aria-expanded="false"><span class="hpd-sidebar__title">その他の法定業務</span><span class="hpd-sidebar__icon">▼</span></button>
+                  <div class="hpd-sidebar__content">
+                    <div class="hpd-sidebar__section">
+                      <ul class="hpd-sidebar__list">
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">構造方法等の認定に係る性能評価</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">エレベーターの性能評価</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">型式適合認定・製造者認証</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">建築基準法に基づく公示等</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">特別評価方法認定に係る試験業務</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">住宅型式性能認定</a></li>
+                        <li class="hpd-sidebar__list-item"><a class="hpd-sidebar__link" href="#">住宅品質確保法に基づく公示等</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <div class="hpd-003__main">
+              <div class="hpd-heading is-yellow">
+                <h2 class="hpd-heading__title">CASBEE建築評価認証</h2>
+              </div>
+              <div class="hpd-003__news">
+                <h3 class="hpd-003__news-title">CASBEE NEWS</h3>
+                <ul class="hpd-003__news-list">
+                  <li class="hpd-003__news-item">
+                    <time class="hpd-003__news-date">令和7年9月8日</time><span class="hpd-003__news-text">CASBEE建築評価認証を更新しました。</span>
+                  </li>
+                  <li class="hpd-003__news-item">
+                    <time class="hpd-003__news-date">令和7年8月6日</time><span class="hpd-003__news-text">CASBEE建築評価認証を更新しました。</span>
+                  </li>
+                  <li class="hpd-003__news-item">
+                    <time class="hpd-003__news-date">令和7年7月4日</time><span class="hpd-003__news-text">CASBEE建築評価認証を更新しました。</span>
+                  </li>
+                  <li class="hpd-003__news-item">
+                    <time class="hpd-003__news-date">令和7年6月10日</time><span class="hpd-003__news-text">CASBEE建築評価認証を更新しました。</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="hpd-003__tabs"><a class="hpd-003__tab is-active" href="#">様式ダウンロード・評価ソフト<span class="hpd-003__tab-icon">▼</span></a><a class="hpd-003__tab" href="#">手数料<span class="hpd-003__tab-icon">▼</span></a><a class="hpd-003__tab" href="#">評価認証の流れ<span class="hpd-003__tab-icon">▼</span></a><a class="hpd-003__tab" href="#">概要<span class="hpd-003__tab-icon">▼</span></a><a class="hpd-003__tab" href="#">評価認証一覧<span class="hpd-003__tab-icon">▼</span></a></div>
+              <div class="hpd-003__section">
+                <h2 class="hpd-003__section-title">様式ダウンロード・評価ソフト</h2>
+                <div class="hpd-003__subsection">
+                  <h3 class="hpd-003__subsection-title">●要領・様式</h3>
+                  <div class="hpd-003__download-table">
+                    <table class="hpd-003__table">
+                      <tbody>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--label">要領</td>
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE建築評価認証申請ガイド 【2022年6月6日更新】</span></a></td>
+                          <td><img class="hpd-003__download-icon" src="/images/pdf-icon.svg" alt="PDF"></td>
+                        </tr>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--label" rowspan="4">様式</td>
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE建築評価認証申請書兼掲載承諾書</span><span class="hpd-003__download-form">様式-1</span></a></td>
+                          <td><img class="hpd-003__download-icon--word" src="/images/word-icon.svg" alt="Word"></td>
+                        </tr>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE建築評価認証取り下げ届</span><span class="hpd-003__download-form">様式-4</span></a></td>
+                          <td><img class="hpd-003__download-icon--word" src="/images/word-icon.svg" alt="Word"></td>
+                        </tr>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE建築評価認証内容変更申告書</span><span class="hpd-003__download-form">様式-5</span></a></td>
+                          <td><img class="hpd-003__download-icon--word" src="/images/word-icon.svg" alt="Word"></td>
+                        </tr>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">委任状</span><span class="hpd-003__download-form">様式-8</span></a></td>
+                          <td><img class="hpd-003__download-icon--word" src="/images/word-icon.svg" alt="Word"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="hpd-003__subsection">
+                  <h3 class="hpd-003__subsection-title">●規程・約款</h3>
+                  <div class="hpd-003__download-table">
+                    <table class="hpd-003__table">
+                      <tbody>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--label">規程</td>
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE評価認証業務規程 【2025年10月1日更新】</span></a></td>
+                          <td><img class="hpd-003__download-icon" src="/images/pdf-icon.svg" alt="PDF"></td>
+                        </tr>
+                        <tr class="hpd-003__table-row--section">
+                          <td class="hpd-003__table-cell--label">約款</td>
+                          <td class="hpd-003__table-cell--content"><a class="hpd-003__download-link" href="#"><span class="hpd-003__download-text">CASBEE評価認証業務約款 【2018年5月15日更新】</span></a></td>
+                          <td><img class="hpd-003__download-icon" src="/images/pdf-icon.svg" alt="PDF"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="hpd-003__subsection">
+                  <h3 class="hpd-003__subsection-title">●CASBEE評価ソフトのダウンロード</h3>
+                  <p class="hpd-003__software-text">IBECホームページ<a class="hpd-003__software-link" href="https://www.ibec.or.jp/CASBEE/index.htm" target="_blank">(https://www.ibec.or.jp/CASBEE/index.htm)</a></p>
+                </div>
+              </div>
+              <div class="hpd-003__section">
+                <h2 class="hpd-003__section-title">CASBEE建築評価認証手数料</h2>
+                <div class="hpd-003__section-main">
+                  <p class="hpd-003__intro-text">CASBEE建築評価認証に係る手数料は下表のとおりです。</p>
+                  <div class="hpd-003__fee-table"></div>
+                  <h3 class="hpd-003__fee-table-title">表 CASBEE建築評価認証手数料表</h3>
+                  <div class="hpd-003__table-wrapper">
+                    <table class="hpd-003__fee-table-content">
+                      <thead>
+                        <tr>
+                          <th class="hpd-003__fee-header">建築物の延べ面積</th>
+                          <th class="hpd-003__fee-header">用途</th>
+                          <th class="hpd-003__fee-header">金額(円)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="hpd-003__fee-cell" rowspan="2">2,000㎡未満</td>
+                          <td class="hpd-003__fee-cell">単一用途</td>
+                          <td class="hpd-003__fee-cell">440,000<span class="hpd-003__fee-tax">(400,000円)</span></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell">複合用途</td>
+                          <td class="hpd-003__fee-cell">2以上の用途から一用途毎に<br />上記金額へ111,000円(100,000円)を加算</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell" rowspan="2">2,000㎡以上 <br />10,000㎡未満</td>
+                          <td class="hpd-003__fee-cell">単一用途</td>
+                          <td class="hpd-003__fee-cell">550,000<span class="hpd-003__fee-tax">(500,000円)</span></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell">複合用途</td>
+                          <td class="hpd-003__fee-cell">2以上の用途から一用途毎に<br />上記金額へ111,000円(100,000円)を加算</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell" rowspan="2">10,000㎡以上 <br />50,000㎡未満</td>
+                          <td class="hpd-003__fee-cell">単一用途</td>
+                          <td class="hpd-003__fee-cell">660,000<span class="hpd-003__fee-tax">(600,000円)</span></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell">複合用途</td>
+                          <td class="hpd-003__fee-cell">2以上の用途から一用途毎に<br />上記金額へ220,000円(200,000円)を加算</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell" rowspan="2">50,000㎡以上 <br />100,000㎡未満</td>
+                          <td class="hpd-003__fee-cell">単一用途</td>
+                          <td class="hpd-003__fee-cell">770,000<span class="hpd-003__fee-tax">(700,000円)</span></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell">複合用途</td>
+                          <td class="hpd-003__fee-cell">2以上の用途から一用途毎に<br />上記金額へ220,000円(200,000円)を加算</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell" rowspan="2">100,000㎡以上</td>
+                          <td class="hpd-003__fee-cell">単一用途</td>
+                          <td class="hpd-003__fee-cell">880,000<span class="hpd-003__fee-tax">(800,000円)</span></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__fee-cell">複合用途</td>
+                          <td class="hpd-003__fee-cell">2以上の用途から一用途毎に<br />上記金額へ220,000円(200,000円)を加算</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="hpd-003__notes"></div>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※1</span>当財団が評価認証を行った建築物を再度評価認証する場合(認証有効期限に達する物件を更新する場合も含む。)には、表中の消費税抜き金額の70%を評価認証料金とする。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※2</span>評価認証の審査に係る現地調査が生じた場合には、現地調査に掛かる交通費等を認証料金に加算する。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※3</span>同一用途の複数の建築物を一申請とする場合には、2以上の建築物から一建築物毎に表中の複合用途の場合の金額を加算する。この場合、複数の建築物の延べ面積の合計により、表中の建築物の延べ面積を区分する。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※4</span>当財団が評価認証書を再交付する場合の料金は、1通に付き11,000円(10,000円)とする。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※5</span>当財団が行う、他の評価・認証業務と併せて申請を行う場合など、審査業務が効率的に行えると判断した場合は割引を行う事ができる。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※6</span>認証書・認証票・評価結果を紙面にて交付する場合、1通につき2,200円(2,000円)を加算する。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※7</span>提出図書を紙面にて引き受ける場合、一の申請につき2,200円(2,000円)を加算する。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※8</span>CASBEE-改修で改修前の評価認証を併せて行う場合には、表中の単一用途の場合の金額に、0.7を乗じた金額を加算する。</p>
+                  <p class="hpd-003__note"><span class="hpd-003__note-mark">※9</span>居室がない工場の用途の場合は、手数料から110,000円(100,000円)を減額する。</p>
+                </div>
+              </div>
+              <div class="hpd-003__section">
+                <h2 class="hpd-003__section-title">CASBEE建築評価認証の流れ</h2>
+                <div class="hpd-003__section-main">
+                  <p class="hpd-003__flow-subtitle">事前相談から評価認証の公表までの標準的な手続きの流れは以下の通りです。</p>
+                  <div class="hpd-003__flowchart">
+                    <div class="hpd-003__flow-step">
+                      <div class="hpd-003__flow-wrapper">
+                        <div class="hpd-003__flow-box">
+                          <div class="hpd-003__flow-content">
+                            <div class="hpd-003__flow-item">
+                              <h3 class="hpd-003__flow-title is-active">事前相談</h3>
+                              <div class="hpd-003__flow-arrow-line"></div>
+                            </div>
+                            <p class="hpd-003__flow-description">ベターリビング住宅性能評価部の担当者が、申請対象建築物の概要、適用範囲、スケジュール等を確認します。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hpd-003__flow-step">
+                      <div class="hpd-003__flow-wrapper">
+                        <div class="hpd-003__flow-box">
+                          <div class="hpd-003__flow-content">
+                            <div class="hpd-003__flow-item">
+                              <h3 class="hpd-003__flow-title">申請・引受</h3>
+                              <div class="hpd-003__flow-arrow-line"></div>
+                            </div>
+                            <p class="hpd-003__flow-description">
+                              申請に際しては、本ガイドの「3．申請図書等作成」を参者に申請に必要な申請図書等をとりまとめていだだきます。<br />
+                              申請図書等は、原則としてご持参頂き、記載漏れ・不足等がないことをベターリビングの担当者が確認し、受付を行います。<br />
+                              受付後、引受承諾書、CASBEE評価認証業務約款及び請求書を申請者に発行し、業務の引受を行います。<br />
+                              申請は随時受付を行っています。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hpd-003__flow-step">
+                      <div class="hpd-003__flow-wrapper">
+                        <div class="hpd-003__flow-box">
+                          <div class="hpd-003__flow-content">
+                            <div class="hpd-003__flow-item">
+                              <h3 class="hpd-003__flow-title">審査</h3>
+                              <div class="hpd-003__flow-arrow-line"></div>
+                            </div>
+                            <p class="hpd-003__flow-description">
+                              審査は、CASBEE評価マニュアルに従ってベターリビングのCASBEE評価員が原則、書類審査により行います。<br />
+                              審査において生じた質疑は指摘事項等回答書にとりまとめ、申請者に対して原則、E-mailにて通知します。<br />
+                              質疑に対する是正・回答は速やかに回答書として作成し、担当者へご提出ください。質疑により申請図書等の差替えが必要となった場合には、差替図書 （正本1 部、副本2部）の提出も併せて行ってください。<br />
+                              なお、必要に応じて申請者へのヒアリング、現地調査等を実施します。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hpd-003__flow-step">
+                      <div class="hpd-003__flow-wrapper">
+                        <div class="hpd-003__flow-box">
+                          <div class="hpd-003__flow-content">
+                            <div class="hpd-003__flow-item">
+                              <h3 class="hpd-003__flow-title">評価認証書交付</h3>
+                              <div class="hpd-003__flow-arrow-line"></div>
+                            </div>
+                            <p class="hpd-003__flow-description">評価が完了すると、CASBEE評価認証書が交付されます。同時に、申請書類の写し（ベターリビングが最終版として押印したもの）が返却されます。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hpd-003__flow-step">
+                      <div class="hpd-003__flow-wrapper">
+                        <div class="hpd-003__flow-box">
+                          <div class="hpd-003__flow-content">
+                            <div class="hpd-003__flow-item">
+                              <h3 class="hpd-003__flow-title">評価認証の公表</h3>
+                              <div class="hpd-003__flow-arrow-line is-last"></div>
+                            </div>
+                            <div class="hpd-003__flow-content-inner">
+                              <p class="hpd-003__flow-description">認証書交付後、申請者の公表意思を確認します。評価認証の事実がベターリビングのホームページで公表されます。申請者の要望により、評価結果は一般社団法人日本サステナブル建築協会（JSBC）のホームページでも公表されます。</p>
+                              <div class="hpd-003__flow-publish">
+                                <p class="hpd-003__flow-publish-title">公表内容は以下の通りです。</p>
+                                <ul class="hpd-003__flow-publish-list">
+                                  <li class="hpd-003__flow-publish-item">①評価認証番号</li>
+                                  <li class="hpd-003__flow-publish-item">②評価認証日</li>
+                                  <li class="hpd-003__flow-publish-item">③建築物の名称</li>
+                                  <li class="hpd-003__flow-publish-item">④申請者の名称</li>
+                                  <li class="hpd-003__flow-publish-item">⑤設計者/施工者の名称</li>
+                                  <li class="hpd-003__flow-publish-item">⑥建設地</li>
+                                  <li class="hpd-003__flow-publish-item">⑦建物用途・規模</li>
+                                  <li class="hpd-003__flow-publish-item">⑧評価ツール・評価段階</li>
+                                  <li class="hpd-003__flow-publish-item">⑨評価結果</li>
+                                  <li class="hpd-003__flow-publish-item">⑩竣工(予定)日</li>
+                                  <li class="hpd-003__flow-publish-item">⑪有効期限</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hpd-003__section">
+                <h2 class="hpd-003__section-title">概要</h2>
+                <div class="hpd-003__section-main">
+                  <p class="hpd-003__overview-intro">ベターリビングは、一般財団法人建築環境・省エネルギー機構（以下「IBEC」といいます。）から、以下のとおりCASBEE※評価認証機関として認定を受け、CASBEEによる建築物の総合的環境性能評価に関する評価認証を行っています。</p>
+                  <div class="hpd-003__overview-table">
+                    <table class="hpd-003__overview-table-content">
+                      <tbody>
+                        <tr>
+                          <td class="hpd-003__overview-label">認定番号</td>
+                          <td class="hpd-003__overview-value">IBEC機関認定第3号</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__overview-label">区分</td>
+                          <td class="hpd-003__overview-value">
+                            CASBEE評価認証機関認定制度要綱第３条第一号（CASBEE戸建‐新築等）、同第二号（CASBEE-新<br />
+                            築等）、同第三号（CASBEE不動産））、同第四号（CASBEE‐ウェルネスオフィス）に定める区分<br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__overview-label">対象地区</td>
+                          <td class="hpd-003__overview-value">※第二号は原則300㎡以上のものに限る</td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__overview-label">期間</td>
+                          <td class="hpd-003__overview-value">
+                            日本全域<br />
+                            自　２０２３年 ３月１日
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="hpd-003__overview-section">
+                    <p class="hpd-003__overview-text">CASBEE評価認証は、CASBEEの適正な運用・普及及び評価結果を第三者に提供する場合の信頼性や透明性の確保のために、ベターリビング等のIBECが認定した第三者機関がCASBEEによる建築物の総合的環境性能評価の適性を認証する制度です。</p>
+                  </div>
+                  <div class="hpd-003__overview-section">
+                    <p class="hpd-003__overview-text">CASBEE評価認証に係る第三者評価を行い、CASBEEによる建築物の総合的環境性能評価が適切であると評価された建築物は、環境品質（Q）と環境負荷（L）とのバランスによって５段階（「S」「A」「B＋」「B-」「C」）に格付けされ、認証マークを付したCASBEE評価認証書が交付されます。</p>
+                  </div>
+                  <div class="hpd-003__overview-section is-background">
+                    <div class="hpd-003__overview-casbee">
+                      <p class="hpd-003__overview-text">
+                        ※CASBEEとは<br />
+                        CASBEEとは、建築物を環境性能で格付けする手法で、省エネや省資源・リサイクル性能といった環境負荷削減の側面はもとより、室内の快適性や景観への配慮といった環境品質・性能の向上といった側面も含めた建築物の環境性能を総合的に評価するシステムです。<br />
+                        CASBEEの開発は、国土交通省が主導し、IBECを中心に進められており、システムの普及に向けて、国においては、地球温暖化対策の一環として国土交通省環境行動計画等に位置付けられ、また複数の地方公共団体においては、環境対策の一環として条例や要綱によるCASBEEを活用した「建築物の環境配慮届出制度」が導入されるなどの取り組みが行われています。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hpd-003__section no-border">
+                <h2 class="hpd-003__section-title">CASBEE建築評価認証一覧</h2>
+                <div class="hpd-003__section-main">
+                  <p class="hpd-003__list-intro">当財団が認証したCASBEE建築の一覧は下表の通りです。</p>
+                  <div class="hpd-003__list-controls">
+                    <div class="hpd-003__list-per-page"><a class="hpd-003__list-per-page-link is-active" href="#">10</a><span class="hpd-003__list-per-page-separator">|</span><a class="hpd-003__list-per-page-link" href="#">20</a><span class="hpd-003__list-per-page-separator">|</span><a class="hpd-003__list-per-page-link" href="#">40</a></div>
+                  </div>
+                  <div class="hpd-003__list-table-wrapper">
+                    <table class="hpd-003__list-table">
+                      <thead>
+                        <tr>
+                          <th class="hpd-003__list-header">評価認証番号</th>
+                          <th class="hpd-003__list-header">建物の名称</th>
+                          <th class="hpd-003__list-header">認証日</th>
+                          <th class="hpd-003__list-header">評価認証建物の概要</th>
+                          <th class="hpd-003__list-header">評価<br />結果</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0036-25</td>
+                          <td class="hpd-003__list-cell">GLP境古河Iプロジェクト</td>
+                          <td class="hpd-003__list-cell">2025/05/21</td>
+                          <td class="hpd-003__list-cell">
+                            <div class="hpd-003__list-detail">
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">申請者：</span>日本GLP株式会社</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">設計者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">施工者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">建設地：</span>茨城県猿島郡境町</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">用途 / 規模：</span>倉庫業を営む倉庫 / 83936.72m2</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">評価ツール / 段階：</span>CASBEE-建築 (新築) 2021年SDGs対応版 / 竣工段階</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">ランク：</span>Aランク</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">竣工日：</span>2025/5/22</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">有効期限：</span>2028/5/21</p>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0034-25</td>
+                          <td class="hpd-003__list-cell">リビオメゾン東北沢</td>
+                          <td class="hpd-003__list-cell">2025/05/15</td>
+                          <td class="hpd-003__list-cell">
+                            <div class="hpd-003__list-detail">
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">申請者：</span>日鉄興和不動産株式会社</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">設計者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">施工者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">建設地：</span>東京都世田谷区北沢1丁目19番17号</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">用途 / 規模：</span>集合住宅 / 1486.22m2</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">評価ツール / 段階：</span>CASBEE-建築 (新築) 2021年SDGs対応版 / 実施設計段階</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">ランク：</span>Aランク</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">竣工日：</span>2025/6/11</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">有効期限：</span>2028/6/10</p>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0033-25</td>
+                          <td class="hpd-003__list-cell">ザ・ライオンズフォーシア外神田</td>
+                          <td class="hpd-003__list-cell">2025/05/01</td>
+                          <td class="hpd-003__list-cell">
+                            <div class="hpd-003__list-detail">
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">申請者：</span>株式会社大京</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">設計者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">施工者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">建設地：</span>東京都千代田区</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">用途 / 規模：</span>集合住宅 / 1699.28m2</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">評価ツール / 段階：</span>CASBEE-建築 (新築) 2021年SDGs対応版 / 実施設計段階</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">ランク：</span>B+ランク</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">竣工日：</span>2025/5/15</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">有効期限：</span>2028/5/14</p>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="hpd-003__list-table-wrapper">
+                    <table class="hpd-003__list-table">
+                      <thead>
+                        <tr>
+                          <th class="hpd-003__list-header">評価認証番号</th>
+                          <th class="hpd-003__list-header">建物の名称</th>
+                          <th class="hpd-003__list-header">認証日</th>
+                          <th class="hpd-003__list-header">評価認証建物の概要</th>
+                          <th class="hpd-003__list-header">評価<br />結果</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0036-25</td>
+                          <td class="hpd-003__list-cell">GLP境古河Iプロジェクト</td>
+                          <td class="hpd-003__list-cell">2025/05/21</td>
+                          <td class="hpd-003__list-cell is-expand">
+                            <div class="hpd-003__list-detail">
+                              <div class="hpd-003__list-detail-plus">+</div>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0034-25</td>
+                          <td class="hpd-003__list-cell">リビオメゾン東北沢</td>
+                          <td class="hpd-003__list-cell">2025/05/15</td>
+                          <td class="hpd-003__list-cell">
+                            <div class="hpd-003__list-detail">
+                              <div class="hpd-003__list-detail-minus">-</div>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">申請者：</span>日鉄興和不動産株式会社</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">設計者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">施工者：</span>(申請者の希望により非公開)</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">建設地：</span>東京都世田谷区北沢1丁目19番17号</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">用途 / 規模：</span>集合住宅 / 1486.22m2</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">評価ツール / 段階：</span>CASBEE-建築 (新築) 2021年SDGs対応版 / 実施設計段階</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">ランク：</span>Aランク</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">竣工日：</span>2025/6/11</p>
+                              <p class="hpd-003__list-detail-item"><span class="hpd-003__list-detail-label">有効期限：</span>2028/6/10</p>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                        <tr>
+                          <td class="hpd-003__list-cell">CBL-CAS建築-0033-25</td>
+                          <td class="hpd-003__list-cell">ザ・ライオンズフォーシア外神田</td>
+                          <td class="hpd-003__list-cell">2025/05/01</td>
+                          <td class="hpd-003__list-cell is-expand">
+                            <div class="hpd-003__list-detail">
+                              <div class="hpd-003__list-detail-plus">+</div>
+                            </div>
+                          </td>
+                          <td class="hpd-003__list-cell"><a class="hpd-003__list-pdf-link" href="#"><img class="hpd-003__list-pdf-icon" src="/images/pdf-icon.svg" alt="PDF"></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="hpd-003__list-pagination"><a class="hpd-003__list-pagination-prev" href="#">&lt;</a>
+                    <ul class="hpd-003__list-pagination-list">
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link is-active" href="#">1</a></li>
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link" href="#">2</a></li>
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link" href="#">3</a></li>
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link" href="#">4</a></li>
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link" href="#">5</a></li>
+                      <li class="hpd-003__list-pagination-item"><span class="hpd-003__list-pagination-dots">...</span></li>
+                      <li class="hpd-003__list-pagination-item"><a class="hpd-003__list-pagination-link" href="#">54</a></li>
+                    </ul><a class="hpd-003__list-pagination-next" href="#">&gt;</a>
+                  </div>
+                  <div class="hpd-003__list-past"><a class="hpd-003__list-past-link" href="#">過去の認証一覧 (2013年以前)</a></div>
+                  <div class="hpd-003__notes-section">
+                    <h3 class="hpd-003__notes-title">注意事項</h3>
+                    <ol class="hpd-003__notes-list">
+                      <li class="hpd-003__notes-item">(１) 本表の掲載内容は、評価認証を行った時点での情報です。その後、申請された内容等が変更される場合がありますが、評価認証後の変更は本表には反映されていません。</li>
+                      <li class="hpd-003__notes-item">(２) 評価認証を行った建築物に関する具体の内容に関するお問い合わせには回答致しかねますので、詳細につきましては 「申請者」に直接お問い合わせ下さい。</li>
+                      <li class="hpd-003__notes-item">(３) 本表は、申請者の依頼により認証した内容を掲載しますので、一般財団法人ベターリビングが行った評価認証結果を全て掲載するものではありません。</li>
+                      <li class="hpd-003__notes-item">(４)「CASBEE-新築」による評価の有効期間は竣工または竣工予定日から３年間です。但し、有効期間内であっても当該建築物が撤去された場合やCASBEE評価認証に影響する設計変更が行われた場合には、評価認証は無効となります。</li>
+                      <li class="hpd-003__notes-item">(５)「CASBEE-既存」による評価の有効期間は評価認証日から５年間です。</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="hpd-footer">
+        <div class="hpd-footer__main">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__top">
+              <div class="hpd-footer__brand">
+                <div class="hpd-footer__contact">
+                  <div class="hpd-footer__contact-item"><span class="hpd-footer__contact-label">一般財団法人 ベターリビング</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="hpd-footer__nav">
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">優良住宅部品(BL部品)等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)認定制度</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 優良住宅部品(BL部品)の検索・紹介</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 関連事業</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">試験・評定・証明・評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ご案内</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 性能試験・調査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 評定・証明・評価</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 研究レポート</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">建築確認検査・性能評価等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 建築確認検査・住宅性能評価等</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 構造計算適合性判定</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 環境関係評価(省エネ等)</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 保険・証明等に係る審査</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 その他の法定業務</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">システム審査登録</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO9001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO14001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27001</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27701</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO/IEC27017</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 ISO45001</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">調査・研究・技術普及等</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 サステナブル居住研究センター</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 A Quick Look at Housing in japan</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">住宅・住宅部品に関する情報管理</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅部品のトレーサビリティ情報管理</a></li>
+                  <li class="hpd-footer__nav-item"><a class="hpd-footer__nav-link" href="#">一 住宅履歴情報管理支援サービス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link is-highlight" href="#">ベターライフリフォーム関連制度</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <h3 class="hpd-footer__nav-title">財団のご案内</h3>
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">アクセス</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">採用情報</a></li>
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">English・中文</a></li>
+                </ul>
+              </div>
+              <div class="hpd-footer__nav-section">
+                <ul class="hpd-footer__nav-list">
+                  <li class="hpd-footer__nav-item is-no-padding"><a class="hpd-footer__nav-link" href="#">BLマガジン</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hpd-footer__horizontal-line">
+            <ul class="hpd-footer__horizontal-list">
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">個人情報保護方針</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">サイトポリシー</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトへのリンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">関連団体等リンク</a></li>
+              <li class="hpd-footer__horizontal-item"><a class="hpd-footer__nav-link" href="#">当サイトに関するご意見</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hpd-footer__mobile">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__mobile-grid">
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">個人情報保護方針</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">サイトポリシー</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">当サイトへのリンク</div>
+              </div>
+              <div class="hpd-footer__mobile-content">
+                <div class="hpd-footer__mobile-title">関連団体等リンク</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hpd-footer__bottom">
+          <div class="hpd-footer__container">
+            <div class="hpd-footer__bottom-content">
+              <div class="hpd-footer__copyright">
+                <p class="hpd-footer__copyright-text">© 2026一般財団法人 ベターリビング</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/slider.js"></script>
+      <script src="./scripts/inquiry-form.js"></script>
+    </div>
+  </body>
+</html>

@@ -89,7 +89,7 @@
   }
 
   &__section {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -103,7 +103,7 @@
   &__section-title {
     font-size: 14px;
     color: var(--gray-dark-color-700);
-    margin: 0 0 12px 0;
+    margin: 0 0 8px 0;
     line-height: 1.5;
 
     @media (max-width: 768px) {
@@ -133,7 +133,7 @@
   &__link {
     font-size: 14px;
     color: var(--sidebar-link-color);
-    text-decoration: none;
+    text-decoration: underline;
     line-height: 1.6;
     display: inline-block;
     transition: color 0.2s ease, text-decoration 0.2s ease;
