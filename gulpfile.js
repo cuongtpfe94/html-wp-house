@@ -42,6 +42,10 @@ const options = {
     src: 'app/images/**/*',
     dest: 'public/images',
   },
+  videos: {
+    src: 'app/videos/**/*',
+    dest: 'public/videos',
+  },
   browserSync: {
     baseDir: 'public',
   },
@@ -113,6 +117,9 @@ function renderScripts() {
 function renderImages() {
   return src(options.images.src).pipe(dest(options.images.dest));
 }
+function renderVideos() {
+  return src(options.videos.src).pipe(dest(options.videos.dest));
+}
 async function clean() {
   return src('public', { read: false, allowEmpty: true }).pipe(cleaner());
 }
@@ -121,11 +128,12 @@ function watchFiles() {
   watch(options.styles.src, renderStyles);
   watch(options.scripts.src, renderScripts);
   watch(options.images.src, renderImages);
+  watch(options.videos.src, renderVideos);
 }
 const watching = parallel(watchFiles, browserSync);
 const build = series(
   // clean,
-  parallel(renderStyles, renderViews, renderScripts, renderImages)
+  parallel(renderStyles, renderViews, renderScripts, renderImages, renderVideos)
 );
 exports.clean = clean;
 exports.build = build;

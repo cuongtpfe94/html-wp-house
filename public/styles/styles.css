@@ -751,6 +751,9 @@ body {
 .hpd-breadcrumb.is-yellow {
   background-color: #ffc77c;
 }
+.hpd-breadcrumb.is-gray {
+  background-color: #f4f4f4;
+}
 .hpd-breadcrumb__container {
   max-width: 1920px;
   margin: 0 auto;
@@ -1039,6 +1042,20 @@ body {
 .hpd-sidebar__section-title + .hpd-sidebar__list {
   padding-left: 8px;
 }
+.hpd-sidebar__section-title + .hpd-sidebar__list .is-sub {
+  padding-left: 20px;
+}
+.hpd-sidebar__section-title + .hpd-sidebar__list .hpd-sidebar__link {
+  padding-left: 12px;
+}
+.hpd-sidebar__section-title + .hpd-sidebar__list .hpd-sidebar__link::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gray-dark-color-700);
+  font-size: 16px;
+  line-height: 1.6;
+}
 .hpd-sidebar__list {
   list-style: none;
   padding: 0;
@@ -1046,6 +1063,7 @@ body {
 }
 .hpd-sidebar__list-item {
   margin-bottom: 8px;
+  position: relative;
 }
 .hpd-sidebar__list-item:last-child {
   margin-bottom: 0;
@@ -1831,10 +1849,11 @@ body {
 
 /* Job List component */
 .hpd-job-list {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .hpd-job-list__menu {
   margin-bottom: 40px;
+  margin-left: 20px;
 }
 .hpd-job-list__menu-item {
   display: flex;
@@ -1861,14 +1880,16 @@ body {
 .hpd-job-list__menu-link {
   font-size: 14px;
   color: var(--gray-dark-color-700);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.2s ease;
   color: var(--sidebar-link-hover-color);
+}
+.hpd-job-list__menu-link:hover {
+  text-decoration: underline;
 }
 .hpd-job-list__new-label {
   color: var(--secondary-color);
   font-size: 14px;
-  font-weight: 600;
   margin-left: 8px;
 }
 .hpd-job-list__detail {
@@ -5162,12 +5183,12 @@ body {
   background-color: var(--white-color);
 }
 .hpd-mail-form__content {
-  padding: 60px 0;
+  padding: 60px 0 0;
   background-color: #f0ddd3;
 }
 @media (max-width: 767px) {
   .hpd-mail-form__content {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 }
 .hpd-mail-form__header {
@@ -5482,13 +5503,13 @@ body {
   }
 }
 .hpd-inquiry__category-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   .hpd-inquiry__category-row {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 }
@@ -5504,6 +5525,7 @@ body {
   width: 18px;
   height: 18px;
   cursor: pointer;
+  accent-color: #fe100a;
 }
 .hpd-inquiry__category-text {
   font-size: 15px;
@@ -5511,9 +5533,10 @@ body {
 }
 .hpd-inquiry__info {
   background-color: var(--white-color);
-  padding: 30px 0;
-  max-width: 820px;
-  margin: 0 auto;
+  padding: 30px 0 40px;
+  max-width: 730px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid #b6aea8;
 }
 @media (max-width: 767px) {
   .hpd-inquiry__info {
@@ -5554,7 +5577,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: var(--gray-dark-color-700);
-  border-left: 5px solid var(--inquiry-theme-color, #fe100a);
+  border-left: 5px solid var(--inquiry-theme-color, --accordion-red);
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -6000,7 +6023,7 @@ body {
 }
 .hpd-contact-list__content {
   background-color: #f2f2f2;
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 @media (max-width: 767px) {
   .hpd-contact-list__content {
@@ -6135,15 +6158,10 @@ body {
 .hpd-top-1__banner {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100%;
   overflow: hidden;
 }
-@media (max-width: 767px) {
-  .hpd-top-1__banner {
-    height: 400px;
-  }
-}
-.hpd-top-1__banner-image {
+.hpd-top-1__banner-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
