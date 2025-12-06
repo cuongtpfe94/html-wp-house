@@ -2048,11 +2048,13 @@ body {
 }
 .hpd-main-banner__header {
   position: relative;
-  margin: 0 auto 30px;
+  margin-left: auto;
+  margin-bottom: 30px;
   display: inline-flex;
   flex-direction: column;
   padding-top: 50px;
   padding-left: 12px;
+  min-width: 68%;
 }
 .hpd-main-banner__title {
   font-size: 50px;
@@ -2077,8 +2079,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 18px;
-  max-width: 980px;
+  max-width: 1180px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   margin-bottom: 60px;
 }
@@ -2102,6 +2105,7 @@ body {
 }
 .hpd-main-banner__notices-list {
   overflow: hidden;
+  max-width: 630px;
 }
 .hpd-main-banner__notice-meta {
   display: flex;
@@ -2139,19 +2143,17 @@ body {
 }
 .hpd-main-banner__image {
   flex-shrink: 0;
-  width: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(-120px);
   z-index: 1;
+  width: 40%;
 }
 .hpd-main-banner__image img {
-  width: 100%;
-  height: auto;
   display: block;
   height: 400px;
   object-fit: contain;
+  margin-right: auto;
 }
 @media (max-width: 1200px) {
   .hpd-main-banner__content {
