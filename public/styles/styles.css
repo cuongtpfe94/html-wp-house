@@ -5194,12 +5194,17 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 }
+.hpd-mail-form__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 .hpd-mail-form__inner {
   background-color: var(--white-color);
 }
 .hpd-mail-form__content {
   padding: 60px 0 0;
-  background-color: #f0ddd3;
+  background-color: #fee7dc;
 }
 @media (max-width: 767px) {
   .hpd-mail-form__content {
@@ -5227,6 +5232,7 @@ body {
   color: var(--white-color);
   margin: 0;
   line-height: 1.4;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .hpd-mail-form__title {
@@ -5253,9 +5259,10 @@ body {
   gap: 12px;
 }
 .hpd-mail-form__info-item {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--gray-dark-color-700);
   line-height: 1.8;
+  letter-spacing: -1px;
 }
 @media (max-width: 767px) {
   .hpd-mail-form__info-item {
@@ -5322,10 +5329,9 @@ body {
 }
 .hpd-mail-form__input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 8px 16px;
   font-size: 15px;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
+  border: 1px solid #716769;
   transition: border-color 0.2s ease;
 }
 .hpd-mail-form__input::placeholder {
@@ -5343,9 +5349,9 @@ body {
 }
 .hpd-mail-form__note {
   margin: 8px 0 0 0;
-  color: #fe100a;
+  color: #fe0f09;
   line-height: 1.6;
-  font-size: 13px;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   .hpd-mail-form__note {
@@ -5367,7 +5373,7 @@ body {
   }
 }
 .hpd-mail-form__privacy-text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--gray-dark-color-700);
   line-height: 1.8;
   margin: 0 0 10px 0;
@@ -5405,8 +5411,7 @@ body {
 }
 .hpd-mail-form__checkbox-text {
   font-size: 16px;
-  color: var(--gray-dark-color-700);
-  font-weight: 500;
+  color: #140b0b;
 }
 .hpd-mail-form__submit {
   text-align: center;
@@ -5418,7 +5423,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
