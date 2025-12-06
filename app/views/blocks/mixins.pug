@@ -38,7 +38,10 @@ mixin sectionHeader(title, color = 'is-red')
 mixin slider(slides = [])
   .hpd-slider
     button.hpd-slider__arrow.hpd-slider__arrow--prev(type='button' aria-label='Previous')
-      span &lt;
+      <svg xmlns="http://www.w3.org/2000/svg" width="28.036" height="55.821" viewBox="0 0 28.036 55.821">
+        <path id="Path_246" data-name="Path 246" d="M606.283,2589.166v.145l23.315,23.8-1.045,4.039-26.991-27.766v-.289l26.991-27.766,1.045,4.039Z" transform="translate(-601.562 -2561.328)" fill="#828282"/>
+      </svg>
+
 
     .hpd-slider__container
       .hpd-slider__track
@@ -55,7 +58,10 @@ mixin slider(slides = [])
                   span= slide.linkText || '詳しくはこちら'
 
     button.hpd-slider__arrow.hpd-slider__arrow--next(type='button' aria-label='Next')
-      span &gt;
+      <svg xmlns="http://www.w3.org/2000/svg" width="28.036" height="55.821" viewBox="0 0 28.036 55.821">
+        <path id="Path_247" data-name="Path 247" d="M1988.475,2589.383l-26.991,27.766-1.045-4.039,23.315-23.8v-.145l-23.315-23.8,1.045-4.039,26.991,27.766Z" transform="translate(-1960.439 -2561.328)" fill="#828282"/>
+      </svg>
+
 
     .hpd-slider__dots
       each slide, index in slides
@@ -65,3 +71,30 @@ mixin contactBox(title, link = '#', color = 'is-red')
   .hpd-contact-box(class=color)
     a.hpd-contact-box__link(href=link)
       span.hpd-contact-box__text= title
+
+mixin breadcrumb(items = [])
+  .hpd-breadcrumb
+    .hpd-breadcrumb__container
+      ol.hpd-breadcrumb__list
+        each item in items
+          li.hpd-breadcrumb__item
+            a.hpd-breadcrumb__link(href=item.link)= item.title
+          if item.separator
+            span.hpd-breadcrumb__separator= item.separator
+          else
+            span.hpd-breadcrumb__separator >
+          if item.current
+            span.hpd-breadcrumb__current= item.current
+
+mixin breadcrumb2(items = [])
+  .hpd-breadcrumb2
+    .hpd-breadcrumb2__container
+      ol.hpd-breadcrumb2__list
+        each item in items
+          li.hpd-breadcrumb2__item
+            if item.link
+              a.hpd-breadcrumb2__link(href=item.link)= item.title
+            else
+              span.hpd-breadcrumb2__current= item.current
+          if item.link
+            span.hpd-breadcrumb2__separator >

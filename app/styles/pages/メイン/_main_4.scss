@@ -29,7 +29,7 @@
     padding: 40px 20px;
 
     @media (min-width: 768px) {
-      padding: 50px 40px;
+      padding: 16px 40px;
     }
   }
 
@@ -37,6 +37,10 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+
+    &.is-full {
+      grid-template-columns: 1fr;
+    }
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
@@ -72,7 +76,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     text-decoration: none;
     line-height: 1.8;
@@ -102,6 +106,15 @@
 
     @media (max-width: 767px) {
       margin-top: 40px;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+
+    img {
+      object-fit: cover;
+      margin: 0 auto;
     }
   }
 }

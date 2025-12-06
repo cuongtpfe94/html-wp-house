@@ -1,6 +1,6 @@
 .hpd-top-2
   .hpd-top-2__container
-    include ../../blocks/breadcrum2
+    +breadcrumb2([{title: 'ホーム', link: '/'}, {current: '過去のお知らせ一覧'}])
 
     h3.hpd-top-2__title 過去のお知らせ一覧
 
@@ -44,37 +44,43 @@
             .hpd-top-2__search
               input.hpd-top-2__search-input(type='text' placeholder='')
               button.hpd-top-2__search-btn
-                span 🔍
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.207" height="21.207" viewBox="0 0 21.207 21.207">
+                  <line id="Line_53" data-name="Line 53" x1="9.622" y1="9.622" transform="translate(10.877 10.878)" fill="none" stroke="#9e9d9e" stroke-miterlimit="10" stroke-width="2"/>
+                  <circle id="Ellipse_36" data-name="Ellipse 36" cx="7.555" cy="7.555" r="7.555" transform="translate(1 1)" fill="#fff" stroke="#9e9d9e" stroke-miterlimit="10" stroke-width="2"/>
+                </svg>
+
+
 
         main.hpd-top-2__main
           .hpd-top-2__header
-            p.hpd-top-2__results 全件表示中（187件）｜2025年度｜2024年度｜2023年度
+            p.hpd-top-2__results 表示件数｜10件｜20件｜40件
 
           .hpd-top-2__list
-            each item in Array(20).fill({date: '2025.4.00', category: 'BL部品', text: '1行50文字程度〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇'})
+            each item, index in Array(20).fill({date: '2025.4.00', category: 'BL部品', text: '1行50文字程度〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇'})
               a.hpd-top-2__item(href='#')
                 .hpd-top-2__item-inner
                   .hpd-top-2__item-header
                     time.hpd-top-2__item-date= item.date
                     span.hpd-top-2__item-category= item.category
                   p.hpd-top-2__item-text= item.text
-                .hpd-top-2__item-arrow
-                  span >
+                .hpd-top-2__item-arrow(class={ 'is-circle': index === 0 })
+                  if index !== 0
+                    span >
 
-          .hpd-top-2__pagination
-            button.hpd-top-2__page-btn.is-active 1
-            button.hpd-top-2__page-btn.is-prev
-              span ＜
-            button.hpd-top-2__page-btn 2
-            button.hpd-top-2__page-btn 3
-            button.hpd-top-2__page-btn 4
-            button.hpd-top-2__page-btn 5
-            button.hpd-top-2__page-btn 6
-            button.hpd-top-2__page-btn 7
-            button.hpd-top-2__page-btn 8
-            button.hpd-top-2__page-btn 9
-            button.hpd-top-2__page-btn 10
-            span.hpd-top-2__page-dots ...
-            button.hpd-top-2__page-btn 20
-            button.hpd-top-2__page-btn.is-next
-              span ＞
+            .hpd-top-2__pagination
+              button.hpd-top-2__page-btn.is-prev
+                span
+              button.hpd-top-2__page-btn.is-active 1
+              button.hpd-top-2__page-btn 2
+              button.hpd-top-2__page-btn 3
+              button.hpd-top-2__page-btn 4
+              button.hpd-top-2__page-btn 5
+              button.hpd-top-2__page-btn 6
+              button.hpd-top-2__page-btn 7
+              button.hpd-top-2__page-btn 8
+              button.hpd-top-2__page-btn 9
+              button.hpd-top-2__page-btn 10
+              span.hpd-top-2__page-dots ...
+              button.hpd-top-2__page-btn 20
+              button.hpd-top-2__page-btn.is-next
+                span
