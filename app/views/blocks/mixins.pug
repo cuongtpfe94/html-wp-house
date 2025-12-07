@@ -9,17 +9,17 @@ mixin checklist(title, items = [])
             each item in items
               a.hpd-checklist__button.is-auto(href="#")= item
 
-mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' | 'is-teal' | 'is-purple' | 'is-yellow', items = [])
+mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' | 'is-teal' | 'is-purple' | 'is-yellow', items = [], isCustom = false)
   .hpd-main-banner(class=color)
     .hpd-main-banner__content
-      .hpd-main-banner__header
+      .hpd-main-banner__header(class=isCustom ? 'is-full' : '')
         h3.hpd-main-banner__title= title
         h4.hpd-main-banner__subtitle= subtitle
 
       if items && items.length > 0
-        .hpd-main-banner__notices
+        .hpd-main-banner__notices(class=isCustom ? 'is-full' : '')
           span.hpd-main-banner__badge お知らせ
-          .hpd-main-banner__notices-list
+          .hpd-main-banner__notices-list(class=isCustom ? 'is-full' : '')
             each item in items
               a.hpd-main-banner__notice(href=item.link || '#')
                 .hpd-main-banner__notice-meta
@@ -27,13 +27,18 @@ mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' 
                 .hpd-main-banner__notice-title= item.title
                 span.hpd-main-banner__arrow >
 
-    .hpd-main-banner__image
-      if image
-        img(src=image alt=title)
+    if isCustom
+      .hpd-main-banner__custom-image
+        if image
+          img(src=image alt=title)
+    else
+      .hpd-main-banner__image
+        if image
+          img(src=image alt=title)
 
-mixin sectionHeader(title, color = 'is-red')
+mixin sectionHeader(title, color = 'is-red', align = 'is-left')
   .hpd-section-header(class=color)
-    h2.hpd-section-header__title= title
+    h2.hpd-section-header__title(class=align)= title
 
 mixin slider(slides = [])
   .hpd-slider

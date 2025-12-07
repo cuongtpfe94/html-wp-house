@@ -60,7 +60,7 @@
     }
 
     #{$root}__badge {
-      background-color: #e4f0fa;
+      background-color: #def0f0;
       color: var(--accordion-teal);
     }
   }
@@ -107,6 +107,14 @@
     padding-top: 50px;
     padding-left: 12px;
     min-width: 68%;
+
+    &.is-full {
+      min-width: 80%;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 
   &__title {
@@ -140,6 +148,10 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 60px;
 
+    &.is-full {
+      max-width: 1600px;
+    }
+
     @media (min-width: 768px) {
       flex-direction: row;
     }
@@ -147,13 +159,13 @@
 
   &__notice {
     display: flex;
-    align-items: center;
     gap: 20px;
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s ease;
     padding: 8px 0;
     border-bottom: 1px dashed #e0e0e0;
+    height: 60px;
 
     &:first-child {
       border-top: 1px dashed #e0e0e0;
@@ -163,6 +175,10 @@
   &__notices-list {
     overflow: hidden;
     max-width: 630px;
+
+    &.is-full {
+      max-width: 1150px;
+    }
   }
 
   &__notice-meta {
@@ -191,10 +207,7 @@
     flex: 1;
     font-size: 16px;
     color: #333;
-    line-height: 1.6;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.3;
     transition: color 0.2s ease;
   }
 
@@ -202,6 +215,7 @@
     font-size: 18px;
     color: #999;
     flex-shrink: 0;
+    align-self: center;
   }
 
   &__image {

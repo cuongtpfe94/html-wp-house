@@ -14,8 +14,12 @@
     font-weight: 500;
     color: var(--gray-color);
     margin-bottom: 32px;
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: 20px;
+
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
   }
 
   &__content {
@@ -31,6 +35,11 @@
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 80px;
+    margin-left: 0;
+
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
 
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
@@ -39,7 +48,7 @@
 
   &__sidebar {
     padding: 0;
-    margin-top: 32px;
+    margin-top: 42px;
 
     @media (max-width: 1024px) {
       display: none;
@@ -107,6 +116,7 @@
     border-radius: 20px;
     overflow: hidden;
     background-color: var(--white-color);
+    margin-top: 25px;
   }
 
   &__search-input {
@@ -143,7 +153,7 @@
   }
 
   &__header {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   &__results {
@@ -179,8 +189,6 @@
     }
 
     @media (max-width: 767px) {
-      flex-direction: column;
-      align-items: flex-start;
       gap: 10px;
       padding: 15px;
     }
@@ -249,19 +257,15 @@
       background-color: var(--gray-color);
       color: var(--white-color);
     }
-
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
 
   &__pagination {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 40px 4px;
   }
 
   &__page-btn {
@@ -309,5 +313,6 @@
   &__page-dots {
     padding: 0 10px;
     color: var(--gray-color);
+    font-size: 30px;
   }
 }
