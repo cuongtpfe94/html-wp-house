@@ -2109,7 +2109,6 @@ body {
   transition: background-color 0.2s ease;
   padding: 8px 0;
   border-bottom: 1px dashed #e0e0e0;
-  height: 60px;
 }
 .hpd-main-banner__notice:first-child {
   border-top: 1px dashed #e0e0e0;
@@ -5208,6 +5207,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 24px;
+  gap: 24px;
 }
 @media (min-width: 768px) {
   .hpd-main-6__section {
