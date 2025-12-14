@@ -82,10 +82,10 @@
                 input.hpd-inquiry__input(type='text' id='school-name' name='school-name' placeholder='')
 
               .hpd-inquiry__field
-                label.hpd-inquiry__label(for='department')
+                label.hpd-inquiry__label(for='department-recruit')
                   span.hpd-inquiry__label-text 学部
                   span.hpd-inquiry__required 必須
-                input.hpd-inquiry__input(type='text' id='department' name='department' placeholder='')
+                input.hpd-inquiry__input(type='text' id='department-recruit' name='department-recruit' placeholder='')
 
               .hpd-inquiry__field
                 label.hpd-inquiry__label(for='major')
@@ -136,7 +136,8 @@
           .hpd-inquiry__field
             label.hpd-inquiry__label(for='address')
               span.hpd-inquiry__label-text 所在地・住所
-            input.hpd-inquiry__input(type='text' id='address' name='address' placeholder='例：東京都千代田区霞ヶ関○丁目○番○号')
+              span.hpd-inquiry__required 必須
+            input.hpd-inquiry__input(type='text' id='address' name='address' placeholder='例：東京都千代田区富士見2-7-2', required)
 
           .hpd-inquiry__field
             label.hpd-inquiry__label(for='phone')
@@ -156,7 +157,7 @@
             input.hpd-inquiry__input(type='email' id='email' name='email' placeholder='例：better-living@cbl.or.jp' required)
 
           .hpd-inquiry__recruit-fields(style='display: none;')
-            .hpd-inquiry__field
+            .hpd-inquiry__field(style='display: none;')
               label.hpd-inquiry__label(for='resume')
                 span.hpd-inquiry__label-text 履歴書
                 span.hpd-inquiry__required 必須
@@ -166,7 +167,7 @@
                 span.hpd-inquiry__file-name 選択されていません
                 p.hpd-inquiry__file-note ファイルサイズは3MBまで／PDF（.pdf）、Word（.docx）、Excel（.xlsx）のみです
 
-            .hpd-inquiry__field
+            .hpd-inquiry__field(style='display: none;')
               label.hpd-inquiry__label(for='entry-sheet')
                 span.hpd-inquiry__label-text エントリーシート
                 span.hpd-inquiry__required 必須
@@ -176,6 +177,58 @@
                 span.hpd-inquiry__file-name 選択されていません
                 p.hpd-inquiry__file-note ファイルサイズは3MBまで／Excel（.xlsx）のみです
                 a.hpd-inquiry__file-link(href='#') 様式はこちら
+
+            .hpd-inquiry__field(style='display: none;')
+              label.hpd-inquiry__label(for='resume')
+                span.hpd-inquiry__label-text 履歴書
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='resume' name='resume' accept='.pdf,.doc,.docx,.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='resume') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／PDF（.pdf）、Word（.docx）、Excel（.xlsx）のみです
+
+            .hpd-inquiry__field(style='display: none;')
+              label.hpd-inquiry__label(for='entry-sheet')
+                span.hpd-inquiry__label-text エントリーシート
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='entry-sheet' name='entry-sheet' accept='.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='entry-sheet') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／Excel（.xlsx）のみです
+                a.hpd-inquiry__file-link(href='#') 様式はこちら
+
+            .hpd-inquiry__field(style='display: none;')
+              label.hpd-inquiry__label(for='internship')
+                span.hpd-inquiry__label-text インターンシップ<br />推薦申込書<br />（様式-1）
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='internship' name='internship' accept='.pdf,.doc,.docx,.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='internship') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／Excel（.xlsx／.xls）のみです
+                a.hpd-inquiry__file-link(href='#') 様式はこちら
+
+            .hpd-inquiry__field(style='display: none;')
+              label.hpd-inquiry__label(for='internship-survey')
+                span.hpd-inquiry__label-text インターンシップ<br />調査票<br />（様式-2）
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__file-upload
+                input.hpd-inquiry__file-input(type='file' id='internship-survey' name='internship-survey' accept='.xls,.xlsx')
+                label.hpd-inquiry__file-label(for='internship-survey') ファイルを選択
+                span.hpd-inquiry__file-name 選択されていません
+                p.hpd-inquiry__file-note ファイルサイズは3MBまで／Excel（.xlsx／.xls）のみです
+                a.hpd-inquiry__file-link(href='#') 様式はこちら
+
+            .hpd-inquiry__field(style='display: none;')
+              label.hpd-inquiry__label(for='date')
+                span.hpd-inquiry__label-text 希望実施日
+                span.hpd-inquiry__required 必須
+              .hpd-inquiry__date-wrapper
+                select.hpd-inquiry__select(type='select' id='date' name='date' required)
+                  option(value='') 日時を選択してください
+                span 対面コースはオンラインコースの参加後に申込方法をご案内いたします
 
           .hpd-inquiry__contact-header.hpd-inquiry__content-header お問い合わせ内容
 
@@ -213,7 +266,7 @@
             label.hpd-inquiry__label(for='subcategory')
               span.hpd-inquiry__label-text 分野
               span.hpd-inquiry__required 必須
-            .hpd-inquiry__category-grid
+            .hpd-inquiry__category-grid.is-three-column
 
           .hpd-inquiry__field.hpd-inquiry__content-field-simple(style='display: none;')
             label.hpd-inquiry__label(for='content-simple')

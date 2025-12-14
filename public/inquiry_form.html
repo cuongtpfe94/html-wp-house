@@ -250,8 +250,8 @@
                       <input class="hpd-inquiry__input" type="text" id="school-name" name="school-name" placeholder="">
                     </div>
                     <div class="hpd-inquiry__field">
-                      <label class="hpd-inquiry__label" for="department"><span class="hpd-inquiry__label-text">学部</span><span class="hpd-inquiry__required">必須</span></label>
-                      <input class="hpd-inquiry__input" type="text" id="department" name="department" placeholder="">
+                      <label class="hpd-inquiry__label" for="department-recruit"><span class="hpd-inquiry__label-text">学部</span><span class="hpd-inquiry__required">必須</span></label>
+                      <input class="hpd-inquiry__input" type="text" id="department-recruit" name="department-recruit" placeholder="">
                     </div>
                     <div class="hpd-inquiry__field">
                       <label class="hpd-inquiry__label" for="major"><span class="hpd-inquiry__label-text">学科</span><span class="hpd-inquiry__required">必須</span></label>
@@ -292,8 +292,8 @@
                   <input class="hpd-inquiry__input" type="text" id="department" name="department" placeholder="例：総務部　部長">
                 </div>
                 <div class="hpd-inquiry__field">
-                  <label class="hpd-inquiry__label" for="address"><span class="hpd-inquiry__label-text">所在地・住所</span></label>
-                  <input class="hpd-inquiry__input" type="text" id="address" name="address" placeholder="例：東京都千代田区霞ヶ関○丁目○番○号">
+                  <label class="hpd-inquiry__label" for="address"><span class="hpd-inquiry__label-text">所在地・住所</span><span class="hpd-inquiry__required">必須</span></label>
+                  <input class="hpd-inquiry__input" type="text" id="address" name="address" placeholder="例：東京都千代田区富士見2-7-2" required>
                 </div>
                 <div class="hpd-inquiry__field">
                   <label class="hpd-inquiry__label" for="phone"><span class="hpd-inquiry__label-text">電話番号</span><span class="hpd-inquiry__required">必須</span></label>
@@ -308,7 +308,7 @@
                   <input class="hpd-inquiry__input" type="email" id="email" name="email" placeholder="例：better-living@cbl.or.jp" required>
                 </div>
                 <div class="hpd-inquiry__recruit-fields" style="display: none;">
-                  <div class="hpd-inquiry__field">
+                  <div class="hpd-inquiry__field" style="display: none;">
                     <label class="hpd-inquiry__label" for="resume"><span class="hpd-inquiry__label-text">履歴書</span><span class="hpd-inquiry__required">必須</span></label>
                     <div class="hpd-inquiry__file-upload">
                       <input class="hpd-inquiry__file-input" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx">
@@ -316,12 +316,52 @@
                       <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／PDF（.pdf）、Word（.docx）、Excel（.xlsx）のみです</p>
                     </div>
                   </div>
-                  <div class="hpd-inquiry__field">
+                  <div class="hpd-inquiry__field" style="display: none;">
                     <label class="hpd-inquiry__label" for="entry-sheet"><span class="hpd-inquiry__label-text">エントリーシート</span><span class="hpd-inquiry__required">必須</span></label>
                     <div class="hpd-inquiry__file-upload">
                       <input class="hpd-inquiry__file-input" type="file" id="entry-sheet" name="entry-sheet" accept=".xls,.xlsx">
                       <label class="hpd-inquiry__file-label" for="entry-sheet">ファイルを選択</label><span class="hpd-inquiry__file-name">選択されていません</span>
                       <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／Excel（.xlsx）のみです</p><a class="hpd-inquiry__file-link" href="#">様式はこちら</a>
+                    </div>
+                  </div>
+                  <div class="hpd-inquiry__field" style="display: none;">
+                    <label class="hpd-inquiry__label" for="resume"><span class="hpd-inquiry__label-text">履歴書</span><span class="hpd-inquiry__required">必須</span></label>
+                    <div class="hpd-inquiry__file-upload">
+                      <input class="hpd-inquiry__file-input" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                      <label class="hpd-inquiry__file-label" for="resume">ファイルを選択</label><span class="hpd-inquiry__file-name">選択されていません</span>
+                      <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／PDF（.pdf）、Word（.docx）、Excel（.xlsx）のみです</p>
+                    </div>
+                  </div>
+                  <div class="hpd-inquiry__field" style="display: none;">
+                    <label class="hpd-inquiry__label" for="entry-sheet"><span class="hpd-inquiry__label-text">エントリーシート</span><span class="hpd-inquiry__required">必須</span></label>
+                    <div class="hpd-inquiry__file-upload">
+                      <input class="hpd-inquiry__file-input" type="file" id="entry-sheet" name="entry-sheet" accept=".xls,.xlsx">
+                      <label class="hpd-inquiry__file-label" for="entry-sheet">ファイルを選択</label><span class="hpd-inquiry__file-name">選択されていません</span>
+                      <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／Excel（.xlsx）のみです</p><a class="hpd-inquiry__file-link" href="#">様式はこちら</a>
+                    </div>
+                  </div>
+                  <div class="hpd-inquiry__field" style="display: none;">
+                    <label class="hpd-inquiry__label" for="internship"><span class="hpd-inquiry__label-text">インターンシップ<br />推薦申込書<br />（様式-1）</span><span class="hpd-inquiry__required">必須</span></label>
+                    <div class="hpd-inquiry__file-upload">
+                      <input class="hpd-inquiry__file-input" type="file" id="internship" name="internship" accept=".pdf,.doc,.docx,.xls,.xlsx">
+                      <label class="hpd-inquiry__file-label" for="internship">ファイルを選択</label><span class="hpd-inquiry__file-name">選択されていません</span>
+                      <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／Excel（.xlsx／.xls）のみです</p><a class="hpd-inquiry__file-link" href="#">様式はこちら</a>
+                    </div>
+                  </div>
+                  <div class="hpd-inquiry__field" style="display: none;">
+                    <label class="hpd-inquiry__label" for="internship-survey"><span class="hpd-inquiry__label-text">インターンシップ<br />調査票<br />（様式-2）</span><span class="hpd-inquiry__required">必須</span></label>
+                    <div class="hpd-inquiry__file-upload">
+                      <input class="hpd-inquiry__file-input" type="file" id="internship-survey" name="internship-survey" accept=".xls,.xlsx">
+                      <label class="hpd-inquiry__file-label" for="internship-survey">ファイルを選択</label><span class="hpd-inquiry__file-name">選択されていません</span>
+                      <p class="hpd-inquiry__file-note">ファイルサイズは3MBまで／Excel（.xlsx／.xls）のみです</p><a class="hpd-inquiry__file-link" href="#">様式はこちら</a>
+                    </div>
+                  </div>
+                  <div class="hpd-inquiry__field" style="display: none;">
+                    <label class="hpd-inquiry__label" for="date"><span class="hpd-inquiry__label-text">希望実施日</span><span class="hpd-inquiry__required">必須</span></label>
+                    <div class="hpd-inquiry__date-wrapper">
+                      <select class="hpd-inquiry__select" type="select" id="date" name="date" required>
+                        <option value="">日時を選択してください</option>
+                      </select><span>対面コースはオンラインコースの参加後に申込方法をご案内いたします</span>
                     </div>
                   </div>
                 </div>
@@ -357,7 +397,7 @@
                 </div>
                 <div class="hpd-inquiry__field hpd-inquiry__subcategory-field" style="display: none;">
                   <label class="hpd-inquiry__label" for="subcategory"><span class="hpd-inquiry__label-text">分野</span><span class="hpd-inquiry__required">必須</span></label>
-                  <div class="hpd-inquiry__category-grid"></div>
+                  <div class="hpd-inquiry__category-grid is-three-column"></div>
                 </div>
                 <div class="hpd-inquiry__field hpd-inquiry__content-field-simple" style="display: none;">
                   <label class="hpd-inquiry__label" for="content-simple"><span class="hpd-inquiry__label-text">内容</span><span class="hpd-inquiry__required">必須</span></label>
