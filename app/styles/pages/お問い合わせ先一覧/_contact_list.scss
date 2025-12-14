@@ -4,7 +4,7 @@
   min-height: 100vh;
 
   &__container {
-    max-width: $container-width;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 16px;
   }
@@ -67,7 +67,7 @@
     font-size: 22px;
     font-weight: 500;
     color: var(--gray-color);
-    margin: 0 0 30px 0;
+    margin: 0 0 12px 0;
 
     @media (max-width: 767px) {
       font-size: 18px;
@@ -94,7 +94,7 @@
   &__th {
     background-color: #828282;
     color: var(--white-color);
-    padding: 18px 20px;
+    padding: 8px 20px;
     text-align: left;
     font-size: 16px;
     font-weight: 500;
@@ -120,8 +120,8 @@
   }
 
   &__td {
-    padding: 18px 20px;
-    font-size: 15px;
+    padding: 8px 20px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     vertical-align: middle;
 
@@ -150,6 +150,7 @@
 
   &__inner {
     background-color: var(--white-color);
-    padding-top: 60px;
+    padding-top: 70px;
+    padding-bottom: 60px;
   }
 }

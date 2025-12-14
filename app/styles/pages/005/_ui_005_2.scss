@@ -31,11 +31,12 @@
     margin: 20px;
     border: 1px solid var(--data-table-border-color);
     border-radius: 3px;
-    padding: 10px;
+    padding: 6px 10px;
     display: flex;
     gap: 20px;
     background-color: var(--sidebar-title-bg-color);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
 
     &-link {
       color: var(--gray-dark-color-700);
@@ -49,11 +50,15 @@
     border-radius: 3px;
     margin-bottom: 30px;
 
+    &:has(+ .hpd-heading) {
+      margin-bottom: 60px;
+    }
+
     &-item {
       padding: 10px;
       display: flex;
       gap: 20px;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
 
       &.is-primary {

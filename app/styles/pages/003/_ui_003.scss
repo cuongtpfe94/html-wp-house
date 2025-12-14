@@ -75,8 +75,8 @@
 
   &__news-title {
     background-color: var(--category-table-header-bg);
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     color: var(--gray-dark-color-700);
     margin: 0 0 8px 0;
     border-bottom: 1px solid var(--download-table-border-color);
@@ -92,6 +92,7 @@
   }
 
   &__news-item {
+    font-size: 16px;
     display: flex;
     align-items: flex-start;
     gap: 90px;
@@ -99,7 +100,7 @@
   }
 
   &__news-date {
-    font-size: 14px;
+    font-size: 16px;
     color: #333333;
     flex-shrink: 0;
     white-space: nowrap;
@@ -114,7 +115,7 @@
   &__tabs {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     flex-direction: row;
 
     @media (max-width: 767px) {
@@ -133,7 +134,7 @@
     padding: 12px 20px;
     text-decoration: underline;
     color: var(--gray-dark-color-700);
-    font-size: 14px;
+    font-size: 15px;
     background-color: #faebcc;
     position: relative;
 
@@ -182,8 +183,8 @@
   }
 
   &__section-title {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     background-color: var(--category-table-header-bg);
     color: var(--gray-dark-color-700);
     margin: 0 0 20px 0;
@@ -208,7 +209,6 @@
 
   &__subsection-title {
     font-size: 16px;
-    font-weight: 600;
     color: var(--gray-dark-color-700);
     margin: 0 0 4px 0;
 
@@ -240,10 +240,10 @@
     padding: 10px 15px;
     background-color: var(--data-table-header-bg);
     font-size: 14px;
-    font-weight: 500;
     color: var(--gray-dark-color-700);
     vertical-align: middle;
     width: 100px;
+    text-align: center;
     border-right: 1px solid var(--download-table-border-color);
 
     @media (max-width: 767px) {
@@ -280,7 +280,6 @@
   &__download-text {
     font-size: 14px;
     line-height: 1.6;
-    flex: 1;
 
     @media (max-width: 767px) {
       font-size: 13px;
@@ -289,7 +288,6 @@
 
   &__download-form {
     font-size: 12px;
-    color: var(--gray-color);
     margin-left: 10px;
     white-space: nowrap;
   }
@@ -347,7 +345,6 @@
 
   &__fee-table-title {
     font-size: 16px;
-    font-weight: 600;
     color: var(--gray-dark-color-700);
     margin: 0 0 15px 0;
     text-align: center;
@@ -372,7 +369,6 @@
     padding: 12px 15px;
     background-color: var(--data-table-header-bg);
     font-size: 14px;
-    font-weight: 600;
     color: var(--data-table-header-color);
     text-align: center;
     border: 1px solid var(--data-table-border-color);
@@ -405,7 +401,7 @@
   }
 
   &__fee-tax {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--gray-dark-color-700);
     margin-left: 5px;
   }
@@ -435,13 +431,12 @@
   &__note-mark {
     position: absolute;
     left: 0;
-    font-weight: 600;
     color: var(--gray-dark-color-700);
   }
 
   // Flowchart Section
   &__flow-subtitle {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 0 0 30px 0;
@@ -600,7 +595,7 @@
 
   // Overview Section
   &__overview-intro {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 0 0 30px 0;
@@ -630,12 +625,11 @@
     padding: 12px 20px;
     background-color: var(--data-table-header-bg);
     font-size: 14px;
-    font-weight: 600;
     color: var(--data-table-header-color);
     border: 1px solid var(--data-table-border-color);
-    vertical-align: top;
+    vertical-align: middle;
     width: 150px;
-    text-align: left;
+    text-align: center;
 
     @media (max-width: 767px) {
       padding: 10px 15px;
@@ -651,6 +645,7 @@
     border: 1px solid var(--data-table-border-color);
     vertical-align: top;
     line-height: 1.8;
+    letter-spacing: -0.5px;
 
     @media (max-width: 767px) {
       padding: 10px 15px;
@@ -688,7 +683,7 @@
   }
 
   &__overview-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 0 0 15px 0;
@@ -773,7 +768,6 @@
     padding: 4px 0;
     background-color: var(--data-table-header-bg);
     font-size: 14px;
-    font-weight: 600;
     color: var(--data-table-header-color);
     border: 1px solid var(--data-table-border-color);
     text-align: center;

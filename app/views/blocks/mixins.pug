@@ -9,6 +9,15 @@ mixin checklist(title, items = [])
             each item in items
               a.hpd-checklist__button.is-auto(href="#")= item
 
+mixin banner2(title, image)
+  .hpd-banner
+    .hpd-banner__container
+      .hpd-banner__image
+        img.hpd-banner__image-src(src=image alt="banner")
+      .hpd-banner__content
+        h2.hpd-banner__content-title= title
+
+
 mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' | 'is-teal' | 'is-purple' | 'is-yellow', items = [], isCustom = false)
   .hpd-main-banner(class=color)
     .hpd-main-banner__content
@@ -103,3 +112,17 @@ mixin breadcrumb2(items = [])
               span.hpd-breadcrumb2__current= item.current
           if item.link
             span.hpd-breadcrumb2__separator >
+
+mixin breadcrumb3(items = [], color = '')
+  nav.hpd-breadcrumb(aria-label="Breadcrumb" class=color)
+    .hpd-breadcrumb__container
+      ol.hpd-breadcrumb__list
+        each item in items
+          li.hpd-breadcrumb__item
+            if item.link
+              a.hpd-breadcrumb__link(href=item.link)= item.title
+            else
+              span.hpd-breadcrumb__current= item.current
+          if item.link
+            span.hpd-breadcrumb__separator >
+

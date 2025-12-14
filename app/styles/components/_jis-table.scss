@@ -15,7 +15,6 @@
     color: var(--gray-dark-color-700);
     margin-bottom: 10px;
     padding-right: 10px;
-    font-weight: 600;
   }
 
   &__wrapper {
@@ -53,9 +52,8 @@
 
   &__header {
     padding: 6px 8px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
+    text-align: left;
+    font-size: 14px;
     color: var(--data-table-header-color);
     border-right: 1px solid var(--data-table-border-color);
     vertical-align: middle;
@@ -80,26 +78,27 @@
     }
 
     &:nth-child(4) {
-      min-width: 220px;
+      min-width: 210px;
     }
 
     &:nth-child(5) {
-      min-width: 140px;
+      min-width: 120px;
     }
 
     &:nth-child(6) {
-      min-width: 180px;
+      min-width: 230px;
     }
 
     &:nth-child(7) {
-      min-width: 60px;
-      width: 60px;
+      min-width: 40px;
+      width: 40px;
+      white-space: nowrap;
     }
   }
 
   &__cell {
     padding: 12px 8px;
-    text-align: center;
+    text-align: left;
     font-size: 13px;
     color: var(--data-table-cell-color);
     border-right: 1px solid var(--data-table-border-color);
@@ -146,8 +145,8 @@
   }
 
   &__dots {
-    font-size: 24px;
-    color: var(--gray-color);
+    font-size: 30px;
+    color: #000;
     letter-spacing: -12px;
     font-weight: bold;
   }

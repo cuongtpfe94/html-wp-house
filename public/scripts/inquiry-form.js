@@ -154,32 +154,32 @@
   };
   const colorClasses = {
     red: {
-      border: '#fe100a',
+      border: '#e68082',
       bg: '#f9dfe0'
     },
     blue: {
-      border: '#0066cc',
-      bg: '#d6e9f8'
+      border: '#4987B5',
+      bg: '#D3E5F1'
     },
     orange: {
-      border: '#ff6600',
-      bg: '#ffe8d6'
+      border: '#F0962B',
+      bg: '#FBE5CA'
     },
     teal: {
-      border: '#008b8b',
-      bg: '#d6f0f0'
+      border: '#68BB61',
+      bg: '#D9EED7'
     },
     purple: {
-      border: '#9370db',
-      bg: '#ede7f6'
+      border: '#5AB4B4',
+      bg: '#D6ECEC'
     },
     green: {
-      border: '#2d8b57',
-      bg: '#e0f2e9'
+      border: '#7F7F7F',
+      bg: '#DFDFDF'
     },
     gray: {
-      border: '#828282',
-      bg: '#eeeeee'
+      border: '#7F7F7F',
+      bg: '#DFDFDF'
     }
   };
   function updateFormContent(categoryKey) {
@@ -265,7 +265,7 @@
     }
 
     // Show/hide headers for recruit and other
-    const isSimpleForm = data.isRecruit || categoryKey === 'other';
+    const isSimpleForm = data.isRecruit;
     const contentHeader = document.querySelector('.hpd-inquiry__content-header');
     const contactHeader = document.querySelector('.hpd-inquiry__contact-header--main');
 

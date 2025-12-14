@@ -2,12 +2,12 @@
 
 .hpd-008
   .hpd-008__container
-    include ../../blocks/breadcrum
+    +breadcrumb3([{title: 'HOME', link: '/'}, {title: '建築確認検査・住宅性能評価等（住宅・建築評価センター）', link: '#'}, {current: '確認検査［建築基準法］'}], 'is-yellow')
     include ../../blocks/banner
     .hpd-008__content
       include ../../blocks/sidebar
       .hpd-008__main
-        include ../../blocks/heading
+        include ../../blocks/heading2
         .hpd-008__text 当財団は平成14年8月20日指定確認検査機関として国土交通大臣の指定を受け、建築基準法に基づく確認審査、中間検査、完了検査及び仮使用認定の業務を行っております。
 
         include ./notice-box

@@ -2,7 +2,7 @@
 
 .hpd-banner2 {
   background-color: var(--banner2-bg-color);
-  height: 300px;
+  height: 540px;
 
   &__container {
     max-width: $container-width;
@@ -12,20 +12,39 @@
 
   &__content {
     &-title {
-      font-size: 50px;
+      font-size: 40px;
       color: var(--gray-color);
+      transform: translateX(0);
+
+      @media (min-width: 768px) {
+        transform: translateX(110px);
+        font-size: 56px;
+      }
     }
   }
 
   &__inner {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 80px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 0;
+    }
   }
 
   &__image {
+    transform: translateX(0);
+
+    @media (min-width: 768px) {
+      transform: translateX(140px);
+    }
+
     &-src {
-      width: 400px;
+      width: 100%;
       height: auto;
       object-fit: cover;
     }

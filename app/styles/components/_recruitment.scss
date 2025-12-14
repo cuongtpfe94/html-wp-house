@@ -6,6 +6,7 @@
 
   &__section {
     margin-bottom: 40px;
+    margin-left: 20px;
 
     &:last-child {
       margin-bottom: 0;
@@ -26,8 +27,7 @@
   }
 
   &__title {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
     color: var(--gray-dark-color-700);
     margin: 0;
     line-height: 1.4;
@@ -49,14 +49,13 @@
   }
 
   &__label {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.6;
-    font-weight: 500;
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 16 hpx;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
 
@@ -84,8 +83,7 @@
   }
 
   &__subtitle {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     margin: 0 0 15px 0;
     line-height: 1.6;

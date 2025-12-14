@@ -1,6 +1,6 @@
 .hpd-about
   .hpd-about__container
-    include ../../blocks/breadcrum2
+    +breadcrumb2([{title: 'ホーム', link: '/'}, {current: '財団のご案内'}])
   include ../../blocks/banner2
   .hpd-about__content
     .hpd-about__main
@@ -22,11 +22,12 @@
               | 現在では公正・中立な第三者機関として、住宅をはじめとする建築物の設計、施工、部品、材料に関する評価、試験、登録等の事業及び調査研究事業を継続に実行しております。我が国は人口減少社会・成熟社会を迎え、少子高齢化、地球環境や安全・安心の確保等に関しており一層の取り組みを求められていますし、これらの課題は住宅・建築のあり方にもかかわる課題でもあります。
 
             p.hpd-about__paragraph
-              | 新しい令和の時代を迎え、ベターリビングでは住宅・建築に関する基準認証・試験研究機関としての立場から、これまで以上に
+              | 新しい令和の時代を迎え、ベターリビングでは住宅・建築に関する基準認証・試験研究機関としての立場から、これまで以上にこれらの課題に向き合い、より良き住宅、より良き住環境、より良き建築の実現に向けて貢献してまいります。
+
+
 
           .hpd-about__image-box
             img.hpd-about__pamphlet(src="/images/logo-2.svg" alt="パンフレット（日本語版）")
-            p.hpd-about__image-caption パンフレット（日本語版）
 
         .hpd-about__buttons
           a.hpd-about__button(href="#")
@@ -51,7 +52,7 @@
                 | ベターリビングは、住宅をはじめとする建築物の設計、施工、部品、材料に関する的確な評価、試験、登録等の業務や住生活に関する創造的な調査・研究事業を通じて、より安心安全で、より快適に優しく、よりサスティナブルな（持続可能な）住まいづくり暮らしの実現に貢献します。
 
 
-              h3.hpd-about__mission-heading
+              h3.hpd-about__mission-heading.is-secondary
                 span.hpd-about__mission-heading-icon ●
                 span ベターリビング スピリット
               ul.hpd-about__mission-list
@@ -287,13 +288,13 @@
                 span.hpd-about__accordion-icon +
               .hpd-about__accordion-content
                 .hpd-about__accordion-two-sections
-                  .hpd-about__accordion-half-section
+                  .hpd-about__accordion-custom-section
                     .hpd-about__accordion-section
                       p.hpd-about__accordion-section-text 定期的な点検や交換が必要な住宅部品について、製品が設置された住戸を特定するためのトレーサビリティ情報の管理を行います。
                       p.hpd-about__accordion-section-text 住宅の点検・修繕等の維持管理やリフォーム、既存住宅売買時に活用される設計図書、修繕記録などの住宅履歴情報を保管・閲覧できる情報システムを提供します。
 
 
-                  .hpd-about__accordion-half-section
+                  .hpd-about__accordion-custom-section
                     .hpd-about__accordion-section
                       .hpd-about__accordion-image-single.purple
                         img(src="/images/about-15.png" alt="いえかるてのロゴマーク")
@@ -305,12 +306,12 @@
                 span.hpd-about__accordion-icon +
               .hpd-about__accordion-content
                 .hpd-about__accordion-two-sections
-                  .hpd-about__accordion-half-section
+                  .hpd-about__accordion-custom-section
                     .hpd-about__accordion-section
                       p.hpd-about__accordion-section-text 地域の中小リフォーム事業者の信頼性、提案力及び技術力の向上に向けた取り組みにより、消費者の安全・安心、便利な暮らしを実現するため、一般社団法人ベターライフリフォーム協会と協働して住宅リフォームを推進します。
                       p.hpd-about__accordion-section-text この取り組みの一環として、リフォーム業務品質審査登録制度、ベターライフリフォームアドバイザー登録制度等のサービス提供を通じて、リフォーム事業者を支援します。
 
-                  .hpd-about__accordion-half-section
+                  .hpd-about__accordion-custom-section
                     .hpd-about__accordion-section
                       .hpd-about__accordion-image-single
                         img(src="/images/about-16.png" alt="ベターライフリフォームアドバイザー登録制度")

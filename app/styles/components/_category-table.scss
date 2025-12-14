@@ -20,7 +20,6 @@
 
   &__title {
     font-size: 16px;
-    font-weight: 600;
     color: var(--gray-dark-color-700);
     margin: 0;
     line-height: 1.5;
@@ -38,7 +37,7 @@
   &__row {
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 40px;
     border-bottom: 1px solid var(--category-table-border-color);
     text-decoration: none;
     color: var(--gray-dark-color-700);
