@@ -13,6 +13,7 @@
   &__main {
     flex: 1;
     width: 100%;
+    overflow: hidden;
   }
 
   &__content {
@@ -21,14 +22,14 @@
     margin: 40px 0;
     gap: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
       gap: 30px;
     }
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 10px 0 20px;

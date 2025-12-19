@@ -90,6 +90,10 @@
     margin: 0;
     padding: 0;
     gap: 32px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__nav-item {

@@ -21,7 +21,7 @@
     margin: 40px 0;
     gap: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
       gap: 30px;
     }
@@ -34,7 +34,8 @@
     }
 
     &-item:not(:first-child) {
-      margin-top: 30px;
+      margin-top: 20px;
+      overflow: hidden;
     }
   }
 
@@ -43,12 +44,12 @@
     align-items: center;
     justify-content: center;
     transform: rotate(90deg);
-    gap: 4px;
-    margin-top: 40px;
+    gap: 12px;
+    margin-top: 60px;
 
     &-dot {
-      width: 6px;
-      height: 6px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       background: var(--gray-dark-color-700);
     }

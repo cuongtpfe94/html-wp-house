@@ -16,11 +16,11 @@
 
   &__header {
     background-color: var(--category-table-header-bg);
-    padding: 14px 16px;
+    padding: 10px 28px;
   }
 
   &__title {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     margin: 0;
     line-height: 1.5;
@@ -32,7 +32,7 @@
 
   &__buttons {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     flex-wrap: wrap;
 
     @media (max-width: 480px) {

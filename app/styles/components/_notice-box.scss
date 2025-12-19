@@ -52,7 +52,7 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 2;
 
@@ -60,10 +60,14 @@
       color: var(--secondary-color);
       font-weight: 500;
     }
+
+    + .hpd-notice-box__link {
+      margin-top: 8px;
+    }
   }
 
   &__link {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--sidebar-link-color);
     text-decoration: underline;
     transition: color 0.2s ease;

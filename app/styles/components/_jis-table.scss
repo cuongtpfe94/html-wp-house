@@ -26,6 +26,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:nth-last-of-type(1) {
+      margin-top: 60px;
+    }
   }
 
   &__table {
@@ -51,7 +55,7 @@
   }
 
   &__header {
-    padding: 6px 8px;
+    padding: 6px;
     text-align: left;
     font-size: 14px;
     color: var(--data-table-header-color);
@@ -74,7 +78,7 @@
     }
 
     &:nth-child(3) {
-      min-width: 120px;
+      min-width: 130px;
     }
 
     &:nth-child(4) {
@@ -97,9 +101,9 @@
   }
 
   &__cell {
-    padding: 12px 8px;
+    padding: 12px 5px;
     text-align: left;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--data-table-cell-color);
     border-right: 1px solid var(--data-table-border-color);
     vertical-align: middle;
@@ -138,16 +142,17 @@
 
   &__pagination {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    justify-content: center;
     transform: rotate(90deg);
-  }
+    gap: 12px;
+    margin-top: 60px;
 
-  &__dots {
-    font-size: 30px;
-    color: #000;
-    letter-spacing: -12px;
-    font-weight: bold;
+    &-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-dark-color-700);
+    }
   }
 }

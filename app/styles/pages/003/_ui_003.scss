@@ -13,6 +13,7 @@
   &__main {
     flex: 1;
     width: 100%;
+    overflow: hidden;
   }
 
   &__content {
@@ -21,7 +22,7 @@
     margin: 40px 0;
     gap: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
     }
   }
@@ -307,7 +308,7 @@
   }
 
   &__software-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 0 0 12px 40px;
@@ -328,7 +329,7 @@
   }
 
   &__intro-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin: 0 0 20px 0;
@@ -567,12 +568,10 @@
   }
 
   &__flow-publish-title {
-    font-size: 15px;
     color: var(--gray-dark-color-700);
     margin: 0 0 8px 0;
 
     @media (max-width: 767px) {
-      font-size: 14px;
       margin-bottom: 10px;
     }
   }
@@ -584,7 +583,7 @@
   }
 
   &__flow-publish-item {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--gray-dark-color-700);
     line-height: 1.6;
 
@@ -698,15 +697,15 @@
   }
 
   &__overview-casbee {
-    margin-top: 15px;
+    margin-top: 6px;
   }
 
   // List Section
   &__list-intro {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 20px;
 
     @media (max-width: 767px) {
       font-size: 13px;
@@ -845,7 +844,7 @@
   }
 
   &__list-detail-item {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--gray-dark-color-700);
     line-height: 1.6;
     margin: 0;
@@ -935,7 +934,7 @@
     height: 30px;
     text-decoration: none;
     color: var(--gray-dark-color-700);
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.2s ease;
     color: #0066cc;
 
@@ -960,7 +959,7 @@
   }
 
   &__list-past-link {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--sidebar-link-color);
     text-decoration: underline;
     transition: color 0.2s ease;
@@ -1000,7 +999,7 @@
   }
 
   &__notes-item {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray-dark-color-700);
     line-height: 1.8;
     margin-bottom: 4px;
@@ -1010,7 +1009,7 @@
     }
 
     @media (max-width: 767px) {
-      font-size: 13px;
+      font-size: 14px;
       margin-bottom: 12px;
     }
   }
