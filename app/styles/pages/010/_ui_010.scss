@@ -14,16 +14,16 @@
   &__main {
     flex: 1;
     width: 100%;
-    overflow: hidden;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin-bottom: 40px;
     gap: 20px;
 
     @media (min-width: 1024px) {
+      margin: 20px 0 30px;
       flex-direction: row;
       gap: 30px;
     }

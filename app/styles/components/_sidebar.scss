@@ -8,6 +8,10 @@
   flex-shrink: 0;
 
   @media (min-width: 1024px) {
+    max-width: 370px;
+  }
+
+  @media (min-width: 1340px) {
     max-width: 425px;
   }
 
@@ -28,10 +32,6 @@
     background-color: var(--white-color);
 
     &.is-active {
-      .hpd-sidebar__icon {
-        transform: rotate(0);
-      }
-
       .hpd-sidebar__content {
         max-height: 3000px;
         opacity: 1;
@@ -78,7 +78,6 @@
     transition: transform 0.3s ease;
     flex-shrink: 0;
     margin-left: 12px;
-    transform: rotate(180deg);
   }
 
   &__content {
@@ -95,7 +94,7 @@
   }
 
   &__section {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     &:last-child {
       margin-bottom: 0;

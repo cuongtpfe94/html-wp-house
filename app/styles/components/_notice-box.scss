@@ -2,7 +2,7 @@
 
 /* Notice Box component */
 .hpd-notice-box {
-  margin: 30px 0;
+  margin: 22px 0;
   border: 1px solid var(--download-table-border-color);
   background-color: var(--white-color);
   border-radius: 5px;
@@ -30,7 +30,7 @@
   }
 
   &__item {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
     line-height: 1.6;

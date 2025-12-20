@@ -78,16 +78,17 @@
   }
 
   &__header {
-    padding: 10px 8px;
+    padding: 10px 2px;
     text-align: center;
     font-size: 12px;
     color: var(--data-table-header-color);
-    border-right: 1px solid var(--download-table-border-color);
-    border-bottom: 1px solid var(--download-table-border-color);
+    border-right: 1px solid #555;
+    border-bottom: 2px solid #555;
     vertical-align: middle;
     line-height: 1.4;
     background-color: var(--white-color);
-    width: 70px;
+    width: 56px;
+    white-space: nowrap;
 
     &:first-child {
       width: 40px;
@@ -96,7 +97,7 @@
 
     &:last-child {
       border-right: none;
-      width: 330px;
+      width: 100%;
     }
 
     &--left {
@@ -111,7 +112,7 @@
   }
 
   &__cell {
-    padding: 10px 2px;
+    padding: 8px 2px;
     text-align: center;
     font-size: 12px;
     color: var(--data-table-cell-color);
@@ -119,8 +120,20 @@
     vertical-align: top;
     line-height: 1.5;
 
+    &.is-zip-final {
+      transform: translateY(-16px);
+
+      .hpd-download-table__download-link {
+        transform: translateY(8px);
+      }
+    }
+
     &:first-child {
-      padding: 10px 0;
+      padding: 8px 0;
+    }
+
+    &:last-child {
+      padding-left: 10px;
     }
 
     &:last-child,
@@ -138,11 +151,11 @@
     }
 
     &--indent {
-      padding-left: 32px;
+      padding-left: 12px;
     }
 
     &--subindent {
-      padding-left: 56px;
+      padding-left: 32px;
     }
   }
 
@@ -152,6 +165,10 @@
   }
 
   &__download-link {
+    &.is-zip {
+      transform: translateY(-8px);
+    }
+
     display: inline-flex;
     align-items: center;
     justify-content: center;

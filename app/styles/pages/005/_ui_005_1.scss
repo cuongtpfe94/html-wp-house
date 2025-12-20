@@ -18,10 +18,11 @@
   &__content {
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
+    margin-bottom: 80px;
     gap: 20px;
 
     @media (min-width: 1024px) {
+      margin: 40px 0;
       flex-direction: row;
       gap: 30px;
     }
@@ -36,6 +37,10 @@
     &-item:not(:first-child) {
       margin-top: 20px;
       overflow: hidden;
+
+      .hpd-checklist__buttons {
+        gap: 14px;
+      }
     }
   }
 
