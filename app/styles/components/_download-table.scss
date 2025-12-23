@@ -22,7 +22,7 @@
   }
 
   &__link-text {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--download-table-link-color);
     text-decoration: underline;
     cursor: pointer;
@@ -125,6 +125,7 @@
 
       .hpd-download-table__download-link {
         transform: translateY(8px);
+        margin: 0 20px;
       }
     }
 
@@ -162,6 +163,11 @@
   &__symbol {
     font-size: 16px;
     font-weight: bold;
+
+    &.is-circle {
+      font-size: 24px;
+      line-height: 1;
+    }
   }
 
   &__download-link {

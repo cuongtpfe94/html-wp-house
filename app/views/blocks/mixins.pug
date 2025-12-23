@@ -9,13 +9,14 @@ mixin checklist(title, items = [])
             each item in items
               a.hpd-checklist__button.is-auto(href="#")= item
 
-mixin banner2(title, image)
+mixin banner2(title, subtitle, image)
   .hpd-banner
     .hpd-banner__container
       .hpd-banner__image
         img.hpd-banner__image-src(src=image alt="banner")
       .hpd-banner__content
         h2.hpd-banner__content-title= title
+        h4.hpd-banner__content-subtitle= subtitle
 
 
 mixin banner(image, title, subtitle, color = 'is-red' | 'is-blue' | 'is-orange' | 'is-teal' | 'is-purple' | 'is-yellow', items = [], isCustom = false)

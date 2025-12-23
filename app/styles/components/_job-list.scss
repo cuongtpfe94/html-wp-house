@@ -23,16 +23,18 @@
 
   &__bullet {
     background-color: var(--sidebar-link-color);
-    width: 6px;
-    height: 6px;
+    width: 16px;
+    height: 16px;
     flex-shrink: 0;
     display: inline-block;
   }
 
   &__bullet-black {
-    color: var(--gray-dark-color-700);
-    font-size: 14px;
+    background-color: var(--gray-dark-color-700);
+    width: 16px;
+    height: 16px;
     flex-shrink: 0;
+    display: inline-block;
   }
 
   &__menu-link {
@@ -65,7 +67,7 @@
 
   &__detail-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 3px;
     border-bottom: 1px solid var(--download-table-border-color);
     padding: 12px;

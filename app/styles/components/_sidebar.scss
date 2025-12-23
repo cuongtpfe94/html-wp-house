@@ -95,6 +95,8 @@
 
   &__section {
     margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
 
     &:last-child {
       margin-bottom: 0;
@@ -147,6 +149,7 @@
   &__list-item {
     margin-bottom: 8px;
     position: relative;
+    letter-spacing: -0.5px;
 
     &:last-child {
       margin-bottom: 0;

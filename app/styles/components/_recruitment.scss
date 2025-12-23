@@ -66,6 +66,12 @@
       margin-left: 20px;
     }
 
+    &.is-space-left {
+      @media (min-width: 768px) {
+        margin-left: 120px;
+      }
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
