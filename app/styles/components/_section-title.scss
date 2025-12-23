@@ -5,7 +5,7 @@
 
   &.is-red {
     #{$root}__title {
-      background-color: #f9e5e6;
+      background-color: #fbecec;
       border: 3px solid var(--accordion-red);
     }
   }
@@ -34,6 +34,7 @@
   &__title {
     font-size: 24px;
     color: var(--gray-color);
+    font-weight: 600;
     margin: 0;
     line-height: 1.4;
     padding: 20px 30px;

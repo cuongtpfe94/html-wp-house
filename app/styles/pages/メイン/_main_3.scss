@@ -72,12 +72,24 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--gray-dark-color-700);
     text-decoration: none;
     line-height: 1.8;
     transition: color 0.2s ease;
     padding: 2px 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid #f0962b;
+      border-top: 2px solid #f0962b;
+      transform: rotate(45deg);
+      margin-right: 8px;
+    }
 
     &:hover {
       color: var(--accordion-orange);
